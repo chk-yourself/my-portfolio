@@ -1,0 +1,217 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  background-color: $white;
+}
+
+p {
+  font-family: $body-font;
+  line-height: 1.75;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+}
+
+h1 {
+  font-weight: 800;
+  text-transform: none;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+  &.text-right {
+    right: 10%;
+  }
+  &.text-left {
+    left: 10%;
+  }
+  /*
+    &:before,
+    &:after {
+      content: '{';
+      padding-right: 5px;
+      display: inline-block;
+      position: relative;
+      top: 1px;
+      height: 100%;
+      font-size: 4rem;
+      color: $aqua;
+      transition: all 0.5s ease;
+    }
+    &:after {
+      content: '}';
+      padding-left: 5px;
+    }
+    &:hover:before {
+      transform: translate(-5px);
+    }
+    &:hover:after {
+      transform: translate(5px);
+    }
+    */
+  }
+
+section {
+  position: relative;
+  background: $feather;
+  .section-title {
+    margin-bottom: 1.5rem;
+    }
+  h2 {
+    position: relative;
+  }
+  @include md {
+    width: calc(100vw - 92px);
+    margin: 0 auto;
+    min-height: 100vh;
+    overflow-y: hidden;
+    padding: 46px 16px;
+  }
+}
+
+// Button Styles
+.btn {
+  font-family: $heading-font;
+  font-weight: 400;
+  font-size: 1rem;
+  &:focus, &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($primary, 7.5%) !important;
+    border-color: darken($primary, 7.5%) !important;
+    color: #000;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
+}
+
+.btn-hand-drawn {
+  align-self:center;
+  background:transparent;
+  padding: .5rem;
+  margin: 0;
+  transition:all .5s ease;
+  color:#41403E;
+  font-size:2rem;
+  letter-spacing:1px;
+  outline:none;
+  box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+/*
+Above is shorthand for:
+border-top-left-radius: 255px 15px;
+border-top-right-radius: 15px 225px;
+border-bottom-right-radius: 225px 15px;
+border-bottom-left-radius:15px 255px;
+*/
+  &:hover {
+    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+  }
+  &.lined.thick{
+    border:solid 7px #41403E;
+  }
+  &.dotted.thick{
+    border:dotted 5px #41403E;
+  }
+  &.dashed.thick{
+  border:dashed 5px #41403E;
+  }
+  &.lined.thin{
+  border:solid 2px #41403E;
+  }
+  &.dotted.thin{
+  border:dotted 2px #41403E;
+  }
+  &.dashed.thin{
+  border:dashed 2px #41403E;
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: $primary;
+}
+
+// Icon Styles
+
+.fa {
+  color: $midnight;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+  padding: 0;
+  @include xl {
+    max-width: 960px;
+  }
+}
+
+.waves {
+  fill: none;
+  stroke: $primary;
+  stroke-width: 5px;
+  width: 50px;
+  position: relative;
+  &--right {
+    right: 10%;
+  }
+  &--left {
+    left: 10%;
+  }
+}
+
+.row {
+  margin: 0;
+}

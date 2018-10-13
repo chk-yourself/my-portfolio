@@ -1,0 +1,114 @@
+// Styling for the Skills section
+
+#skills {
+  h3 {
+    margin: 1.5rem auto 1rem auto;
+    text-align: center;
+  }
+  .skill-set {
+    margin: 2rem auto;
+    text-align: center;
+    ul {
+      list-style-type: none;
+      text-align: center;
+      padding-left: 0;
+    }
+    li {
+      padding: 0;
+      font-family: $body-font;
+    }
+  }
+  .skill-bar {
+    height: 1rem;
+    width: 75%;
+    border: 1px solid $powder-blue;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+      .skill-bar-inner {
+        height: 1rem;
+        background: $powder-blue;
+        display: block;
+        vertical-align: middle;
+      }
+  }
+  .split-left {
+    background: $primary;
+    h3 {
+      color: #fff;
+    }
+    .skill-set {
+      li {
+        color: #fff;
+      }
+      .skill-bar {
+        border-color: $powder-blue;
+      }
+      .skill-bar-inner {
+        background-color: $powder-blue;
+      }
+      #skillOne {
+        width: 90%;   
+      } 
+      #skillTwo {
+        width: 85%;
+      }
+      #skillThree {
+        width: 80%;    
+      }
+      #skillFour {
+        width: 80%;
+      }
+      #skillFive {
+        width: 95%;  
+      }
+      #skillSix {
+        width: 90%;
+      }
+    }
+  }
+  .split-right {
+    background: $white;
+    h3 {
+      color: $primary;
+    }
+    .skill-set {
+      li {
+        color: $smog;
+      }
+      .skill-bar {
+        border-color: $powder-blue;
+      }
+      .skill-bar-inner {
+        background-color: $powder-blue;
+      }
+      #skillSeven {
+        width: 90%;
+      } 
+      #skillEight {
+        width: 85%;
+      }
+      #skillNine {
+        width: 80%;    
+      }
+      #skillTen {
+        width: 80%;
+      }
+      #skillEleven {
+        width: 95%;  
+      }
+      #skillTwelve {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media(min-width:992px) {
+    #skillsChart {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,73 @@
+// Styling for the contact section
+#contact {
+  .section-title {
+    text-align: center;
+  }
+  h2 {
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+  #contactForm {
+    padding: 2.5rem;
+      label {
+          color: $primary;
+          font-family: $body-font;
+          font-size: 1.2rem;
+      }
+      .label-required:after {
+        content: '*';
+        color: #fff;
+        margin-left: .1rem;
+      }
+  .form-group {
+    margin-bottom: 1.2rem;
+    input,
+    textarea {
+      padding: 10px;
+    }
+    input.form-control {
+      height: auto;
+    }
+    textarea.form-control {
+      height: 248px;
+    }
+  }
+  .form-control:focus {
+    border-color: $coral;
+    box-shadow: none;
+  }
+  ::-webkit-input-placeholder {
+    font-family: $heading-font;
+    font-weight: 300;
+    font-style: italic;
+    color: $gray-400;
+  }
+  :-moz-placeholder {
+    font-family: $heading-font;
+    font-weight: 300;
+    font-style: italic;
+    color: $gray-400;
+  }
+  ::-moz-placeholder {
+    font-family: $heading-font;
+    font-weight: 300;
+    font-style: italic;
+    color: $gray-400;
+  }
+  :-ms-input-placeholder {
+    font-family: $heading-font;
+    font-weight: 300;
+    font-style: italic;
+    color: $gray-400;
+  }
+}
+}
+
+@media(min-width:992px) {
+    #contactForm {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+}

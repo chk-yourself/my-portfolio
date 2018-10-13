@@ -1,0 +1,80 @@
+// Styling for the navbar
+.navbar {
+  background-color: $white;
+  padding: 0 1rem;
+  .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 10px;
+    color: $primary;
+    i {
+      color: $primary;
+    }
+  }
+  .show {
+    .nav-link {
+      margin: 16px;
+    }
+  }
+  .navbar-brand {
+    color: #000;
+    font-size: 16px;
+    font-family: $heading-font;
+    text-transform: uppercase;
+    font-weight: 300;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($primary, 10%);
+    }
+    b {
+      font-weight: 700;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      @include half-highlight;
+      margin: auto;
+      .nav-link {
+        font-family: $heading-font;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 400;
+        padding: 0;
+        letter-spacing: 1px;
+        color: $blackvelvet;
+        &.active { background-size: 100% 100%; }
+      }
+    }
+  }
+  @include md {
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: $white;
+    .navbar-brand {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 0;
+          margin: 16px;
+        }
+      }
+    }
+    &.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $feather;
+      .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0;
+      }
+    }
+  }
+  }

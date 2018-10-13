@@ -1,0 +1,56 @@
+// Variables
+
+// Colors
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+$primary: #033fff !default;
+
+$blackvelvet: #1a1423;
+$midnight: #00091b;
+$tomato: #ff6347;
+$skyblue: #caf7ff;
+$honeymustard: #ffe19c;
+$lite-mustard: #ffd85b;
+$smog: #313e50;
+$feather: #f6f9fc;
+$coral: #ff7a63;
+$lite-coral: #ffbbb0;
+$purplehaze: #3a3042;
+$powder-blue: #7cc6fe;
+$aqua: #5ff4ee;
+
+// Fonts
+$heading-font: 'Montserrat', Helvetica, Arial, sans-serif;
+$body-font: 'Inconsolata', 'Courier New', Courier, monospace;
+$link-font: 'Inconsolata', 'Courier New', Courier, monospace;
+
+// Breakpoints (Bootstrap)
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$screen-xs-min: 425px;  // Tiny phones
+$screen-sm-min: 576px;  // Small tablets and large smartphones (landscape view)
+$screen-md-min: 768px;  // Small tablets (portrait view)
+$screen-lg-min: 992px;  // Tablets and small desktops
+$screen-xl-min: 1200px; // Large tablets and desktops
+$screen-xx-min: 1440px;
