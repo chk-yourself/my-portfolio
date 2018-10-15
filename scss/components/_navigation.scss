@@ -1,6 +1,6 @@
 // Styling for the navbar
 .navbar {
-  background-color: $white;
+  background-color: $feather;
   padding: 0 1rem;
   .navbar-toggler {
     font-size: 12px;
@@ -53,7 +53,6 @@
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: $white;
     .navbar-brand {
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;

@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  background-color: #fff;
+  background-color: #f4f6f9;
 }
 
 p {
@@ -9,15 +9,15 @@ p {
 }
 
 a {
-  color: #033fff;
+  color: #f95959;
 }
 
 a:hover {
-  color: #0031cf;
+  color: #f72828;
 }
 
 .text-primary {
-  color: #033fff !important;
+  color: #f95959 !important;
 }
 
 h1,
@@ -41,6 +41,7 @@ h2 {
   font-weight: 800;
   text-transform: uppercase;
   position: relative;
+  color: #1e2530;
   /*
     &:before,
     &:after {
@@ -77,7 +78,8 @@ h2.text-left {
 
 section {
   position: relative;
-  background: #f6f9fc;
+  background: #f4f6f9;
+  padding: 46px 0;
 }
 
 section .section-title {
@@ -111,13 +113,13 @@ section h2 {
 }
 
 .btn-primary {
-  background-color: #033fff;
-  border-color: #033fff;
+  background-color: #f95959;
+  border-color: #f95959;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #0034dc !important;
-  border-color: #0034dc !important;
+  background-color: #f83434 !important;
+  border-color: #f83434 !important;
   color: #000;
 }
 
@@ -181,12 +183,12 @@ border-bottom-left-radius:15px 255px;
 }
 
 ::-moz-selection {
-  background: #033fff;
+  background: #f95959;
   text-shadow: none;
 }
 
 ::selection {
-  background: #033fff;
+  background: #f95959;
   text-shadow: none;
 }
 
@@ -203,7 +205,7 @@ img::-moz-selection {
 }
 
 body {
-  -webkit-tap-highlight-color: #033fff;
+  -webkit-tap-highlight-color: #f95959;
 }
 
 .fa {
@@ -224,7 +226,7 @@ body {
 
 .waves {
   fill: none;
-  stroke: #033fff;
+  stroke: #f95959;
   stroke-width: 5px;
   width: 50px;
   position: relative;
@@ -243,7 +245,7 @@ body {
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: #f4f6f9;
   padding: 0 1rem;
 }
 
@@ -251,11 +253,11 @@ body {
   font-size: 12px;
   right: 0;
   padding: 10px;
-  color: #033fff;
+  color: #f95959;
 }
 
 .navbar .navbar-toggler i {
-  color: #033fff;
+  color: #f95959;
 }
 
 .navbar .show .nav-link {
@@ -271,7 +273,7 @@ body {
 }
 
 .navbar .navbar-brand.active, .navbar .navbar-brand:active, .navbar .navbar-brand:focus, .navbar .navbar-brand:hover {
-  color: #0031cf;
+  color: #f72828;
 }
 
 .navbar .navbar-brand b {
@@ -314,7 +316,6 @@ body {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: #fff;
   }
   .navbar .navbar-brand {
     -webkit-transition: all 0.3s;
@@ -327,7 +328,7 @@ body {
   .navbar.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #f6f9fc;
+    background-color: #f4f6f9;
   }
   .navbar.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -339,78 +340,44 @@ header.masthead {
   text-align: left;
   color: #00091b;
   position: relative;
-  background: #f6f9fc;
+  background: #f4f6f9;
   background-image: none;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   width: 100vw;
-  height: calc(100vh - 92px);
-  margin: 46px 0 0;
+  height: 100vh;
   background-size: cover;
 }
 
-@media (min-width: 768px) {
-  header.masthead {
-    width: calc(100vw - 92px);
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-header.masthead .intro {
-  height: 100%;
-}
-
-header.masthead .intro .split {
-  text-align: center;
-  max-height: 50%;
-  padding: 0;
-}
-
-@media (min-width: 576px) {
-  header.masthead .intro .split {
-    max-height: 100%;
-    height: 100%;
-  }
-}
-
-header.masthead .intro .split-left {
-  background-color: #033fff;
-  color: #f6f9fc;
-}
-
-header.masthead .intro .split-right {
-  color: #033fff;
-}
-
-header.masthead .intro .display-2 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 6rem;
-  font-weight: 400;
+header.masthead .intro-text {
   position: absolute;
-  color: #7cc6fe;
+  bottom: 10%;
+  left: 10%;
+  color: #1e2530;
 }
 
-header.masthead .intro .display-1 {
+header.masthead .intro-text .display-1 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: 800;
+  font-size: 6rem;
   text-transform: capitalize;
 }
 
-header.masthead .intro .display-3 {
+header.masthead .intro-text .display-3 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  line-height: .75;
 }
 
-@media (min-width: 768px) {
-  header.masthead .intro .display-3 {
-    font-size: 3.5rem;
-  }
+header.masthead .intro-text .display-4 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
-header.masthead .intro .btn {
+header.masthead .intro-text .btn {
   margin-top: 1.5rem;
 }
 
@@ -486,38 +453,11 @@ header.masthead .arrow-second {
   }
 }
 
-@media (min-width: 768px) {
-  header.masthead .intro-text .display-1 {
-    font-size: 8rem;
-  }
-  header.masthead .intro-text .display-3 {
-    font-size: 3.25rem;
-  }
-  header.masthead .intro-text .display-4 {
-    font-size: 1.95rem;
-  }
-}
-
-@media (min-width: 992px) {
-  header.masthead .intro-text .display-1 {
-    font-size: 9rem;
-  }
-  header.masthead .intro-text .display-3 {
-    font-size: 3.75rem;
-  }
-  header.masthead .intro-text .display-4 {
-    font-size: 2.25rem;
-  }
-}
-
 .page-footer {
   height: 46px;
   text-align: center;
   width: 100%;
-  background-color: #fff;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  background-color: transparent;
 }
 
 .page-footer span.copyright {
@@ -554,11 +494,11 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #033fff;
+  background-color: #f95959;
 }
 
 #about {
-  background: #f6f9fc;
+  background: #f4f6f9;
 }
 
 #about .split-left {
@@ -608,7 +548,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 #contact #contactForm label {
-  color: #033fff;
+  color: #313e50;
   font-family: "Inconsolata", "Courier New", Courier, monospace;
   font-size: 1.2rem;
 }
@@ -864,7 +804,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #skills .skill-bar {
   height: 1rem;
   width: 75%;
-  border: 1px solid #7cc6fe;
+  border: 1px solid #fa6c6c;
   border-radius: 5px;
   margin-bottom: .5rem;
   display: inline-block;
@@ -874,13 +814,13 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #skills .skill-bar .skill-bar-inner {
   height: 1rem;
-  background: #7cc6fe;
+  background: #fa6c6c;
   display: block;
   vertical-align: middle;
 }
 
 #skills .split-left {
-  background: #033fff;
+  background: #313e50;
 }
 
 #skills .split-left h3 {
@@ -889,14 +829,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #skills .split-left .skill-set li {
   color: #fff;
-}
-
-#skills .split-left .skill-set .skill-bar {
-  border-color: #7cc6fe;
-}
-
-#skills .split-left .skill-set .skill-bar-inner {
-  background-color: #7cc6fe;
 }
 
 #skills .split-left .skill-set #skillOne {
@@ -928,19 +860,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 #skills .split-right h3 {
-  color: #033fff;
+  color: #313e50;
 }
 
 #skills .split-right .skill-set li {
   color: #313e50;
-}
-
-#skills .split-right .skill-set .skill-bar {
-  border-color: #7cc6fe;
-}
-
-#skills .split-right .skill-set .skill-bar-inner {
-  background-color: #7cc6fe;
 }
 
 #skills .split-right .skill-set #skillSeven {

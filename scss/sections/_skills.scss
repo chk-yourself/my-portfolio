@@ -21,7 +21,7 @@
   .skill-bar {
     height: 1rem;
     width: 75%;
-    border: 1px solid $powder-blue;
+    border: 1px solid $md-primary;
     border-radius: 5px;
     margin-bottom: .5rem;
     display: inline-block;
@@ -29,25 +29,19 @@
     overflow: hidden;
       .skill-bar-inner {
         height: 1rem;
-        background: $powder-blue;
+        background: $md-primary;
         display: block;
         vertical-align: middle;
       }
   }
   .split-left {
-    background: $primary;
+    background: $smog;
     h3 {
       color: #fff;
     }
     .skill-set {
       li {
         color: #fff;
-      }
-      .skill-bar {
-        border-color: $powder-blue;
-      }
-      .skill-bar-inner {
-        background-color: $powder-blue;
       }
       #skillOne {
         width: 90%;   
@@ -72,17 +66,11 @@
   .split-right {
     background: $white;
     h3 {
-      color: $primary;
+      color: $smog;
     }
     .skill-set {
       li {
         color: $smog;
-      }
-      .skill-bar {
-        border-color: $powder-blue;
-      }
-      .skill-bar-inner {
-        background-color: $powder-blue;
       }
       #skillSeven {
         width: 90%;
