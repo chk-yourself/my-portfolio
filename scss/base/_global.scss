@@ -1,4 +1,16 @@
-// Global styling for this template
+html, body {
+  font-size: 16px;
+  @include md {
+    font-size: 18px;
+  }
+  @include lg {
+    font-size: 20px;
+  }
+  @include xl {
+    font-size: 22px;
+  }
+}
+
 body {
   overflow-x: hidden;
   background-color: $feather;

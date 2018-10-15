@@ -1,3 +1,25 @@
+html, body {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  html, body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  html, body {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html, body {
+    font-size: 22px;
+  }
+}
+
 body {
   overflow-x: hidden;
   background-color: #f4f6f9;
@@ -244,6 +266,41 @@ body {
   margin: 0;
 }
 
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  60% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  60% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
 .navbar {
   background-color: #f4f6f9;
   padding: 0 1rem;
@@ -338,7 +395,7 @@ body {
 
 header.masthead {
   text-align: left;
-  color: #00091b;
+  color: #1e2530;
   position: relative;
   background: #f4f6f9;
   background-image: none;
@@ -352,105 +409,53 @@ header.masthead {
 
 header.masthead .intro-text {
   position: absolute;
-  bottom: 10%;
-  left: 10%;
+  bottom: 20%;
+  left: 5%;
   color: #1e2530;
 }
 
 header.masthead .intro-text .display-1 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  font-size: 6rem;
+  font-weight: 700;
+  font-size: 5rem;
   text-transform: capitalize;
+}
+
+header.masthead .intro-text .display-2 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 2.1rem;
+  line-height: .75;
 }
 
 header.masthead .intro-text .display-3 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 2.5rem;
-  line-height: .75;
-}
-
-header.masthead .intro-text .display-4 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 300;
+  line-height: 1.4;
 }
 
 header.masthead .intro-text .btn {
   margin-top: 1.5rem;
 }
 
-header.masthead .arrow {
-  opacity: 0;
+.scroll-icon {
   position: absolute;
-  left: 50%;
-  bottom: 5%;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+  left: calc(50% - 25px);
+  bottom: 25px;
+  z-index: 99;
+  font-size: 11px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Inconsolata", "Courier New", Courier, monospace;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
-header.masthead .arrow:before, header.masthead .arrow:after {
-  background: #00091b;
-  content: '';
-  display: block;
-  height: 3px;
-  position: absolute;
-  bottom: -45%;
-  left: 0;
-  width: 30px;
-}
-
-header.masthead .arrow:before {
-  -webkit-transform: rotate(45deg) translateX(-23%);
-          transform: rotate(45deg) translateX(-23%);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-}
-
-header.masthead .arrow:after {
-  -webkit-transform: rotate(-45deg) translateX(23%);
-          transform: rotate(-45deg) translateX(23%);
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-}
-
-header.masthead .arrow-first {
-  -webkit-animation: arrow-movement 2s ease-in-out infinite;
-          animation: arrow-movement 2s ease-in-out infinite;
-}
-
-header.masthead .arrow-second {
-  -webkit-animation: arrow-movement 2s 1s ease-in-out infinite;
-          animation: arrow-movement 2s 1s ease-in-out infinite;
-}
-
-@-webkit-keyframes arrow-movement {
-  0% {
-    opacity: 0;
-    top: 45%;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes arrow-movement {
-  0% {
-    opacity: 0;
-    top: 45%;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+.scroll-icon .arrow {
+  font-size: 12px;
+  margin-right: 5px;
+  display: inline-block;
 }
 
 .page-footer {

@@ -15,4 +15,6 @@ $('.portfolio-modal').on('show.bs.modal', function(e) {
     $(".navbar").removeClass("d-none");
   })
 
+  feather.replace();
+
 })(jQuery);
