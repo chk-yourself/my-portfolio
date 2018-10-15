@@ -32,7 +32,7 @@
       ['Javascript', 'JSON', 'HTML', 'CSS', 'SCSS'],
       ['Web Design', 'Responsive Design', 'UX/UI Design'],
       'https://chk-yourself.github.io/lemonade/',
-      'A todo-app complete with a UI component library',
+      'A todo-app complete with a UI component library'
     ),
     new Project(
       'Makerbook Refresh',
@@ -40,7 +40,7 @@
       ['React', 'React Router', 'Node/npm', 'Webpack', 'HTML', 'CSS', 'SCSS'],
       ['Web Design', 'Responsive Design', 'UX/UI Design'],
       'https://chk-yourself.github.io/makerbook-refresh/',
-      'A single-page application redesign project',
+      'A single-page application redesign project'
     ),
     new Project(
       'Commercial Real Estate Agent Website',
@@ -50,17 +50,17 @@
       ['HTML', 'CSS'],
       ['Web Design', 'Responsive Design', 'Content Strategy', 'Copywriting', 'Branding'],
       'http://anthonyhkim.com/',
-      'A corporate branding + web design project',
+      'A corporate branding + web design project'
     ),
     new Project(
-      'Celebrity Car Wash Website',
-      `<p>I designed and built a 6-page, responsive, small business website for a full-service car wash, using Squarespace.</p>
+      'Car Wash Website',
+      `<p>I designed and built a 6-page, responsive, small business website for Celebrity Car Wash, using Squarespace.</p>
       <p>I extended the Pacific template with custom CSS to reinforce the client's brand in the design.</p>
       <p>I also authored all written content and sourced supporting imagery that reflects the brand's voice and style.</p>`,
       ['HTML', 'CSS'],
       ['Web Design', 'Responsive Design', 'Content Strategy', 'Copywriting', 'Branding'],
       'http://www.celebritycarwash.com/',
-      'A small business branding + web design project',
+      'A small business branding + web design project'
     ),
     new Project(
       'Technical Documentation',
@@ -68,7 +68,7 @@
       ['JavaScript', 'HTML', 'CSS', 'SCSS'],
       ['Web Design', 'Responsive Design'],
       'https://codepen.io/xtini/full/zLOLqj/',
-      'A technical documentation project',
+      'A technical documentation project'
     ),
     new Project(
       'Pomodoro Clock',
@@ -76,8 +76,8 @@
       ['React', 'HTML', 'CSS', 'SCSS', 'SVG'],
       ['Web Design', 'UI Design'],
       'https://codepen.io/xtini/full/qJaLvb/',
-      'A timer app to help boost productivity',
-    ),
+      'A timer app to help boost productivity'
+    )
   ];
 
   $('#projectDetailsModal').on('show.bs.modal', function (e) {
