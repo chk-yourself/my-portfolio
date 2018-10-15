@@ -11,63 +11,67 @@
   }
   #contactForm {
     padding: 2.5rem;
-      label {
-          color: $smog;
-          font-family: $body-font;
-          font-size: 1.2rem;
+    label {
+      color: $smog;
+      font-family: $body-font;
+      font-size: 1.2rem;
+    }
+    .label-required:after {
+      content: "*";
+      color: $primary;
+      margin-left: 0.1rem;
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+      input,
+      textarea {
+        padding: 10px;
       }
-      .label-required:after {
-        content: '*';
-        color: #fff;
-        margin-left: .1rem;
+      input.form-control {
+        height: auto;
       }
-  .form-group {
-    margin-bottom: 1.2rem;
-    input,
-    textarea {
-      padding: 10px;
+      textarea.form-control {
+        height: 248px;
+      }
     }
-    input.form-control {
-      height: auto;
+    .form-control {
+      border-radius: 0;
+      &:focus {
+        border-color: $smog;
+        box-shadow: none;
+      }
     }
-    textarea.form-control {
-      height: 248px;
+
+    ::-webkit-input-placeholder {
+      font-family: $heading-font;
+      font-weight: 300;
+      font-style: italic;
+      color: $gray-400;
+    }
+    :-moz-placeholder {
+      font-family: $heading-font;
+      font-weight: 300;
+      font-style: italic;
+      color: $gray-400;
+    }
+    ::-moz-placeholder {
+      font-family: $heading-font;
+      font-weight: 300;
+      font-style: italic;
+      color: $gray-400;
+    }
+    :-ms-input-placeholder {
+      font-family: $heading-font;
+      font-weight: 300;
+      font-style: italic;
+      color: $gray-400;
     }
   }
-  .form-control:focus {
-    border-color: $coral;
-    box-shadow: none;
-  }
-  ::-webkit-input-placeholder {
-    font-family: $heading-font;
-    font-weight: 300;
-    font-style: italic;
-    color: $gray-400;
-  }
-  :-moz-placeholder {
-    font-family: $heading-font;
-    font-weight: 300;
-    font-style: italic;
-    color: $gray-400;
-  }
-  ::-moz-placeholder {
-    font-family: $heading-font;
-    font-weight: 300;
-    font-style: italic;
-    color: $gray-400;
-  }
-  :-ms-input-placeholder {
-    font-family: $heading-font;
-    font-weight: 300;
-    font-style: italic;
-    color: $gray-400;
-  }
-}
 }
 
-@media(min-width:992px) {
-    #contactForm {
-        max-width: 75%;
-        margin: 0 auto;
-    }
+@media (min-width: 992px) {
+  #contactForm {
+    max-width: 75%;
+    margin: 0 auto;
+  }
 }

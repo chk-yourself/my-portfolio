@@ -21,18 +21,27 @@ header.masthead {
       font-weight: 700;
       font-size: 5rem;
       text-transform: capitalize;
+      @include md {
+        font-size: 6rem;
+      }
     }
     .display-2 {
       font-family: $heading-font;
       font-weight: 500;
       font-size: 2.1rem;
       line-height: .75;
+      @include md {
+        font-size: 2.6rem;
+      }
     }
     .display-3 {
       font-family: $heading-font;
       font-size: 1.1rem;
       font-weight: 300;
       line-height: 1.4;
+      @include md {
+        font-size: 1.3rem;
+      }
     }
     .btn {
       margin-top: 1.5rem; 

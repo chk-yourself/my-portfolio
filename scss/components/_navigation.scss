@@ -37,13 +37,13 @@
       @include half-highlight;
       margin: auto;
       .nav-link {
-        font-family: $heading-font;
-        font-size: 14px;
+        font-family: $body-font;
+        font-size: 16px;
         line-height: 1;
         font-weight: 400;
         padding: 0;
         letter-spacing: 1px;
-        color: $blackvelvet;
+        color: $dk-smog;
         &.active { background-size: 100% 100%; }
       }
     }

@@ -1,12 +1,12 @@
 // Styling for the Skills section
 
 #skills {
-  h3 {
-    margin: 1.5rem auto 1rem auto;
+  .h3 {
+    margin: 0 0 24px 0;
     text-align: center;
   }
   .skill-set {
-    margin: 2rem auto;
+    margin: 0 auto;
     text-align: center;
     ul {
       list-style-type: none;
@@ -34,10 +34,26 @@
         vertical-align: middle;
       }
   }
+  .split-col {
+    padding: 16px;
+    @include sm {
+      padding: 8px;
+    }
+    @include md {
+      padding: 16px;
+    }
+  }
+  .split-content {
+    padding: 24px 16px;
+    @include box-shadow(1);
+    max-width: 320px;
+    margin: 0 auto;
+  }
   .split-left {
     background: $smog;
     h3 {
       color: #fff;
+      -webkit-font-smoothing: antialiased;
     }
     .skill-set {
       li {
@@ -66,7 +82,7 @@
   .split-right {
     background: $white;
     h3 {
-      color: $smog;
+      color: $md-smog;
     }
     .skill-set {
       li {

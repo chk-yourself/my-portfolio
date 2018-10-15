@@ -2,7 +2,15 @@
 
 #projects {
   .card-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+  .project-grid {
+    @include md {
+      max-width: 600px
+    }
+    @include lg {
+      max-width: 100%;
+    }
   }
   .project-card {
     right: 0;
@@ -10,6 +18,7 @@
     height: 300px;
     border-color: transparent;
     max-width: 260px;
+    border-radius: 0;
     @include box-shadow(1);
     @include md {
       margin-bottom: 30px;

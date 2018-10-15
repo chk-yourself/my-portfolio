@@ -1,13 +1,7 @@
 html, body {
   font-size: 16px;
-  @include md {
-    font-size: 18px;
-  }
   @include lg {
-    font-size: 20px;
-  }
-  @include xl {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
@@ -28,28 +22,24 @@ a {
   }
 }
 
-.text-primary {
-  color: $primary !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: $heading-font;
 }
 
-h1 {
+.h1 {
   font-weight: 800;
   text-transform: none;
 }
 
-h2 {
+.h2 {
   padding: 0;
   margin: 0;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-weight: 800;
   text-transform: uppercase;
   position: relative;
@@ -86,29 +76,33 @@ h2 {
     */
   }
 
-section {
+.h3 {
+  font-size: 1.5rem;
+}
+
+.section {
   position: relative;
   background: $feather;
-  padding: 46px 0;
+  padding: 48px 8px;
   .section-title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     }
   h2 {
     position: relative;
   }
   @include md {
-    width: calc(100vw - 92px);
+    width: calc(100vw - 96px);
     margin: 0 auto;
     min-height: 100vh;
     overflow-y: hidden;
-    padding: 92px 16px;
+    padding: 96px 16px;
   }
 }
 
 // Button Styles
 .btn {
   font-family: $heading-font;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1rem;
   &:focus, &:active {
     outline: none;
@@ -132,56 +126,14 @@ section {
   }
 }
 
-.btn-hand-drawn {
-  align-self:center;
-  background:transparent;
-  padding: .5rem;
-  margin: 0;
-  transition:all .5s ease;
-  color:#41403E;
-  font-size:2rem;
-  letter-spacing:1px;
-  outline:none;
-  box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-/*
-Above is shorthand for:
-border-top-left-radius: 255px 15px;
-border-top-right-radius: 15px 225px;
-border-bottom-right-radius: 225px 15px;
-border-bottom-left-radius:15px 255px;
-*/
-  &:hover {
-    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
-  }
-  &.lined.thick{
-    border:solid 7px #41403E;
-  }
-  &.dotted.thick{
-    border:dotted 5px #41403E;
-  }
-  &.dashed.thick{
-  border:dashed 5px #41403E;
-  }
-  &.lined.thin{
-  border:solid 2px #41403E;
-  }
-  &.dotted.thin{
-  border:dotted 2px #41403E;
-  }
-  &.dashed.thin{
-  border:dashed 2px #41403E;
-  }
-}
-
 // Highlight color customization
 ::-moz-selection {
-  background: $primary;
+  background: $lt-primary;
   text-shadow: none;
 }
 
 ::selection {
-  background: $primary;
+  background: $lt-primary;
   text-shadow: none;
 }
 
@@ -194,19 +146,24 @@ img::-moz-selection {
 }
 
 body {
-  -webkit-tap-highlight-color: $primary;
+  -webkit-tap-highlight-color: $lt-primary;
 }
 
 // Icon Styles
-
-.fa {
-  color: $midnight;
-}
 
 .container {
   height: 100%;
   position: relative;
   padding: 0;
+  @include sm {
+    max-width: 600px;
+  }
+  @include md {
+    max-width: 720px;
+  }
+  @include lg {
+    max-width:960px;
+  }
   @include xl {
     max-width: 960px;
   }

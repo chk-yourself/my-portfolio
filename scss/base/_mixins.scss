@@ -26,10 +26,10 @@
 @mixin half-highlight {
   a {
     text-decoration: none;
-    background: -webkit-linear-gradient(180deg, transparent 60%, $aqua 0);
-    background: -o-linear-gradient(180deg, transparent 60%, $aqua 0);
-    background: -moz-linear-gradient(180deg, transparent 60% $aqua 0);
-    background: linear-gradient(180deg, transparent 60%, $aqua 0);
+    background: -webkit-linear-gradient(180deg, transparent 60%, $lt-primary 0);
+    background: -o-linear-gradient(180deg, transparent 60%, $lt-primary 0);
+    background: -moz-linear-gradient(180deg, transparent 60% $lt-primary 0);
+    background: linear-gradient(180deg, transparent 60%, $lt-primary 0);
     background-size: 0 100%;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
