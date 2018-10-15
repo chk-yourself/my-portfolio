@@ -687,24 +687,26 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .portfolio-modal .modal-content {
-  padding: 100px 0;
+  padding: 32px 0;
+}
+
+.portfolio-modal .modal-content .h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
   text-align: center;
 }
 
-.portfolio-modal .modal-content h2 {
-  font-size: 3em;
-  margin-bottom: 15px;
-}
-
 .portfolio-modal .modal-content p {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+  font-size: .9rem;
 }
 
 .portfolio-modal .modal-content p.item-intro {
-  font-size: 16px;
+  font-size: .8rem;
   font-style: italic;
-  margin: 20px 0 30px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 16px 0 24px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
@@ -720,12 +722,28 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   cursor: pointer;
 }
 
+.portfolio-modal .modal-content .project-details__header {
+  font-size: .8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.portfolio-modal .modal-content .project__list {
+  font-family: "Inconsolata", "Courier New", Courier, monospace;
+}
+
+.portfolio-modal .modal-content .project__list li {
+  font-size: .8rem;
+}
+
 .portfolio-modal .close-modal {
   position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 75px;
-  height: 75px;
+  top: 1rem;
+  right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  line-height: 1;
   cursor: pointer;
   background-color: transparent;
 }
@@ -734,27 +752,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   opacity: 0.3;
 }
 
-.portfolio-modal .close-modal .lr {
-  /* Safari and Chrome */
-  z-index: 1051;
-  width: 1px;
-  height: 75px;
-  margin-left: 35px;
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: #212529;
-}
-
-.portfolio-modal .close-modal .lr .rl {
-  /* Safari and Chrome */
-  z-index: 1052;
-  width: 1px;
-  height: 75px;
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  background-color: #212529;
+.portfolio-modal .close-modal .feather {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 #skills .h3 {

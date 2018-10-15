@@ -8,13 +8,18 @@ $('.navbar').on('click', 'a[href^="#"]', function (event) {
     }, 500);
 });
 
+/*
+
 $('.portfolio-modal').on('show.bs.modal', function(e) {
     $(".navbar").addClass("d-none");
   })
   $('.portfolio-modal').on('hidden.bs.modal', function(e) {
     $(".navbar").removeClass("d-none");
   })
+  */
 
   feather.replace();
+
+  
 
 })(jQuery);
