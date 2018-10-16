@@ -151,89 +151,108 @@
                 <div class="card project-card">
               <a class="project-link" data-toggle="modal" href="#projectDetailsModal" data-title="Lemonade">
                 <div class="project-overlay">
-                  <p class="project-overview">A todo-app built with vanilla JavaScript.</p>
                 </div>
                 <img class="img-fluid" src="" alt="">
               </a>
               <div class="card-body">
                 <h4 class="card-title">Lemonade</h4>
-                <p class="text-muted">JavaScript, JSON, HTML, CSS/SCSS</p>
+                <p class="project-overview"></p>
+                <div class="card__tags"></div>
               </div>
+              <div class="card-footer d-flex justify-content-between">
+                  <span class="card-footer__text">Learn More</span>
+                <i data-feather="arrow-up-right"></i>
+                </div>
             </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="card project-card">
               <a class="project-link" data-toggle="modal" href="#projectDetailsModal" data-title="Makerbook Refresh">
                 <div class="project-overlay">
-                  <div class="project-overview">
-                  </div>
                 </div>
                 <img class="img-fluid" src="" alt="">
               </a>
               <div class="card-body">
                 <h4 class="card-title">Makerbook Refresh</h4>
-                <p class="text-muted">React, React Router, Node/npm, Webpack, HTML, CSS/SCSS</p>
+                <p class="project-overview"></p>
+                <div class="card__tags"></div>
               </div>
+              <div class="card-footer d-flex justify-content-between">
+                  <span class="card-footer__text">Learn More</span>
+                <i data-feather="arrow-up-right"></i>
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="card project-card">
               <a class="project-link" data-toggle="modal" href="#projectDetailsModal" data-title="Commercial Real Estate Agent Website">
                 <div class="project-overlay">
-                  <p class="project-overview">
-                  </p>
                 </div>
                 <img class="img-fluid" src="" alt="">
               </a>
               <div class="card-body">
                 <h4 class="card-title">Commercial Real Estate Agent Website</h4>
-                <p class="text-muted">Web Design</p>
+                <p class="project-overview"></p>
+                <div class="card__tags"></div>
               </div>
+              <div class="card-footer d-flex justify-content-between">
+                  <span class="card-footer__text">Learn More</span>
+                <i data-feather="arrow-up-right"></i>
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="card project-card">
               <a class="project-link" data-toggle="modal" href="#projectDetailsModal" data-title="Car Wash Website">
                 <div class="project-overlay">
-                  <p class="project-overview">
-                  </p>
                 </div>
                 <img class="img-fluid" src="" alt="">
               </a>
               <div class="card-body">
                 <h4 class="card-title">Car Wash Website</h4>
-                <p class="text-muted">Web Design</p>
+                <p class="project-overview"></p>
+                <div class="card__tags"></div>
               </div>
+              <div class="card-footer d-flex justify-content-between">
+                  <span class="card-footer__text">Learn More</span>
+                <i data-feather="arrow-up-right"></i>
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="card project-card">
-              <a class="project-link" data-toggle="modal" href="#projectDetailsModal" data-title="Technical Documentation">
+              <a class="project-link" data-toggle="modal" href="#projectDetailsModal" data-title="Technical Documentation Page">
                 <div class="project-overlay">
-                  <p class="project-overview">
-                  </p>
                 </div>
                 <img class="img-fluid" src="" alt="">
               </a>
               <div class="card-body">
-                <h4 class="card-title">Technical Documentation</h4>
-                <p class="text-muted">Web Design</p>
+                <h4 class="card-title">Technical Documentation Page</h4>
+                <p class="project-overview"></p>
+                <div class="card__tags"></div>
               </div>
+              <div class="card-footer d-flex justify-content-between">
+                  <span class="card-footer__text">Learn More</span>
+                <i data-feather="arrow-up-right"></i>
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="card project-card">
               <a class="project-link" data-toggle="modal" href="#projectDetailsModal" data-title="Pomodoro Clock">
                 <div class="project-overlay">
-                  <p class="project-overview">
-                  </p>
                 </div>
                 <img class="img-fluid" src="" alt="">
               </a>
               <div class="card-body">
                 <h4 class="card-title">Pomodoro Clock</h4>
-                <p class="text-muted">React, HTML, CSS/SCSS</p>
+                <p class="project-overview"></p>
+                <div class="card__tags"></div>
               </div>
+              <div class="card-footer d-flex justify-content-between">
+                  <span class="card-footer__text">Learn More</span>
+                <i data-feather="arrow-up-right"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -298,34 +317,35 @@
         <!-- Portfolio Modals -->
 
     <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="projectDetailsModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="project-modal modal fade" id="projectDetailsModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
             <i data-feather="x"></i>
           </div>
           <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
+               
+              <div class="col-lg-9 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h3 id="projectTitle" class="h3 text-uppercase"></h3>
-                  <p class="item-intro text-muted" id="projectOverview"></p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                  <h3 id="projectTitle" class="h3 project-details__title"></h3>
+                  <p class="project-overview text-muted" id="projectOverview"></p>
+                  <img class="img-fluid d-block mx-auto" src="" alt="">
                   <div class="project-details__section" id="projectDesc"></div>
                   <div class="project-details__section" id="devSkills">
-                  <h4 class="h4 project-details__header">Built with:</h4>
+                  <h5 class="h5 project-details__header">Built with:</h5>
                   <div class="project-details__tags" id="devTags"></div>
                   </div>
                   <div class="project-details__section" id="desSkills">
-                    <h4 class="h4 project-details__header">Design categories:</h4>
+                    <h5 class="h5 project-details__header">Design categories:</h5>
                     <div class="project-details__tags" id="desTags"></div>
                     </div>
-                    <a class="btn btn-primary" id="projectLink" href="">
+                    <div class="btn-wrapper">
+                    <a class="btn btn-primary project__btn" id="projectLink" href="">
                       Check it out<i data-feather="arrow-up-right"></i></a>
+                      </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>

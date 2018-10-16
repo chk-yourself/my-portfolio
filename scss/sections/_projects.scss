@@ -23,6 +23,40 @@
     @include md {
       margin-bottom: 30px;
     }
+    &:hover {
+      @include box-shadow(3);
+      .card-footer {
+        .card-footer__text {
+          color: $dk-smog;
+        }
+        .feather {
+          color: $dk-smog;
+        }
+      }
+    }
+    .card__tags {
+      line-height: 1.1;
+    }
+    .project-tag {
+      background-size: 100% 100%;
+      padding: 0;
+      border-radius: 0;
+      font-size: 13px;
+      margin: 4px;
+      &--dev {
+        background: linear-gradient(180deg, transparent 70%, rgba($lt-primary, .7) 0);
+      }
+      &--des {
+        background: linear-gradient(180deg, transparent 70%, rgba($lt-blue, .7) 0);
+      }
+    }
+    .project-overview {
+      font-size: 14px;
+      width: 100%;
+      color: $smog;
+      padding: 0;
+      line-height: 1.5;
+    }
     .project-link {
       position: absolute;
       display: block;
@@ -38,27 +72,9 @@
         -moz-transition: all ease 0.5s;
         transition: all ease 0.5s;
         opacity: 0;
-        background: fade-out($smog, .1);
+        // background: fade-out($dk-smog, .1);
         &:hover {
           opacity: 1;
-        }
-        .project-overview {
-          font-size: 14px;
-          position: absolute;
-          top: 50%;
-          width: 100%;
-          height: 20px;
-          margin-top: -12px;
-          text-align: center;
-          color: $white;
-          padding: 24px;
-          i {
-            margin-top: -12px;
-          }
-          h3,
-          h4 {
-            margin: 0;
-          }
         }
       }
     }
@@ -79,10 +95,26 @@
       }
     }
   }
+  .card-footer {
+    border-top: none;
+    background-color: transparent;
+    padding-top: 0;
+    .card-footer__text {
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      font-family: $heading-font;
+      letter-spacing: 0.01em;
+      color: $gray-600;
+    }
+    .feather {
+      color: $gray-600;
+    }
+  }
 }
 
 
-.portfolio-modal {
+.project-modal {
   padding-right: 0px !important;
   .modal-dialog {
     margin: 1rem;
@@ -90,25 +122,31 @@
   }
   .modal-content {
     padding: 32px 0;
-    .h3 {
-      font-size: 2rem;
+    .project-details__title {
+      font-size: 1.4rem;
       margin-bottom: 15px;
       text-align: center;
+      @include md {
+        font-size: 1.6rem;
+      }
+    }
+    .h4 {
+      font-size: .9rem;
+      margin-bottom: 8px;
     }
     p {
-      margin-bottom: 24px;
+      margin-bottom: 1rem;
       font-size: .9rem;
-    }
-    p.item-intro {
-      font-size: .8rem;
-      font-style: italic;
-      font-weight: 300;
-      margin: 16px 0 24px;
+      line-height: 1.6;
       font-family: $heading-font;
+      font-weight: 300;
     }
-    ul.list-inline {
-      margin-top: 0;
-      margin-bottom: 30px;
+    .project-overview {
+      font-size: .8rem;
+      font-weight: 300;
+      text-align: center;
+      margin: 16px 0 24px;
+      font-family: $body-font;
     }
     img {
       margin-bottom: 30px;
@@ -120,9 +158,12 @@
       font-size: .8rem;
       text-transform: uppercase;
       text-align: center;
+      margin: 1.5rem 0 .5rem;
     }
     .project__list {
-      font-family: $body-font;
+      font-family: $heading-font;
+      font-weight: 300;
+      padding-inline-start: 24px;
       li {
         font-size: .8rem;
       }
@@ -145,5 +186,37 @@
       width: 1.5rem;
       height: 1.5rem;
     }
+  }
+  .btn-wrapper {
+    text-align: center;
+    margin-top: 32px;
+  }
+}
+.project-details__tags {
+  text-align: center;
+}
+
+.project-tag {
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  padding: 9px 12px;
+  border-radius: 5000px;
+  margin: 2px;
+  font-family: $body-font;
+  &--dev {
+    background-color: rgba($lt-primary, .7);
+  }
+  &--des {
+    background-color: rgba($lt-blue, .7);
+  }
+}
+
+.project__btn {
+  font-size: 16px;
+  .feather {
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
   }
 }

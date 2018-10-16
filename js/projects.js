@@ -9,13 +9,16 @@
       this.url = url;
       this.overview = overview;
     }
+    get cardElem() {
+      return $(`[data-title="${this.title}"]`).parent();
+    }
   }
 
   const projects = [
     new Project(
       'Lemonade',
       `<p>Lemonade is a todo-app that allows you to create, delete, edit, & store tasks, set due dates, pin priority items, add subtasks & notes, categorize tasks with custom, color-coded tags, create new lists & organize them into folders, and filter tasks by completion status, due date, tags, & keywords.</p>
-      <p>UI Components include:</p>
+      <h4 class="h4">UI Components include:</h4>
       <ul class="project__list">
       <li>interactive onboarding tour</li>
       <li>tag labeling system</li>
@@ -30,17 +33,17 @@
       <li>off-canvas navigation</li>
       </ul>`,
       ['Javascript', 'JSON', 'HTML', 'CSS', 'SCSS'],
-      ['Web Design', 'Responsive Design', 'UX/UI Design'],
+      ['Web Design', 'UX/UI Design', 'Responsive Design'],
       'https://chk-yourself.github.io/lemonade/',
-      'A todo-app complete with a UI component library'
+      'a todo-app + UI component library, built with vanilla JS'
     ),
     new Project(
       'Makerbook Refresh',
       '<p>I rebuilt and redesigned Makerbook, a single-page application that features digital design resources, with a card-based layout and off-canvas menu to increase responsiveness, facilitate navigation, and present content in a more digestible format.</p>',
       ['React', 'React Router', 'Node/npm', 'Webpack', 'HTML', 'CSS', 'SCSS'],
-      ['Web Design', 'Responsive Design', 'UX/UI Design'],
+      ['Web Design', 'UX/UI Design', 'Responsive Design'],
       'https://chk-yourself.github.io/makerbook-refresh/',
-      'A single-page application redesign project'
+      'a single-page application redesign project'
     ),
     new Project(
       'Commercial Real Estate Agent Website',
@@ -48,9 +51,9 @@
       <p>I extended the Sonora template with custom CSS to reinforce the client's brand in the design.</p>
       <p>I also authored all written content and sourced supporting imagery that reflects the brand's voice and style.</p>`,
       ['HTML', 'CSS'],
-      ['Web Design', 'Responsive Design', 'Content Strategy', 'Copywriting', 'Branding'],
+      ['Web Design', 'Responsive Design', 'Branding', 'Content Strategy', 'Copywriting'],
       'http://anthonyhkim.com/',
-      'A corporate branding + web design project'
+      'a corporate branding + web design project'
     ),
     new Project(
       'Car Wash Website',
@@ -58,17 +61,17 @@
       <p>I extended the Pacific template with custom CSS to reinforce the client's brand in the design.</p>
       <p>I also authored all written content and sourced supporting imagery that reflects the brand's voice and style.</p>`,
       ['HTML', 'CSS'],
-      ['Web Design', 'Responsive Design', 'Content Strategy', 'Copywriting', 'Branding'],
+      ['Web Design', 'Responsive Design', 'Branding', 'Content Strategy', 'Copywriting'],
       'http://www.celebritycarwash.com/',
-      'A small business branding + web design project'
+      'a small business branding + web design project'
     ),
     new Project(
-      'Technical Documentation',
+      'Technical Documentation Page',
       `<p>I rebuilt React's step-by-step tutorial from scratch, including all functionality, UI components, and responsive layouts.</p>`,
       ['JavaScript', 'HTML', 'CSS', 'SCSS'],
       ['Web Design', 'Responsive Design'],
       'https://codepen.io/xtini/full/zLOLqj/',
-      'A technical documentation project'
+      'a responsive technical documentation page'
     ),
     new Project(
       'Pomodoro Clock',
@@ -76,7 +79,7 @@
       ['React', 'HTML', 'CSS', 'SCSS', 'SVG'],
       ['Web Design', 'UI Design'],
       'https://codepen.io/xtini/full/qJaLvb/',
-      'A timer app to help boost productivity'
+      'a timer app to help boost productivity'
     )
   ];
 
@@ -97,4 +100,14 @@
     modal.find('#desTags').html(desTags);
     modal.find('#projectLink').attr('href', projectURL);
   });
+
+projects.forEach(project => {
+  const devTags = project.devTags.map(tag => `<span class="project-tag project-tag--dev">${tag}</span>`).join('');
+  const desTags = project.desTags.map(tag => `<span class="project-tag project-tag--des">${tag}</span>`).join('');
+  const projectOverview = project.overview;
+  const card = project.cardElem;
+  card.find('.card__tags').html(devTags + desTags);
+  card.find('.project-overview').text(projectOverview);
+});
+
 }(jQuery));
