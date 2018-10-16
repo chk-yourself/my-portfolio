@@ -121,12 +121,12 @@ button {
   &:focus,
   &:focus:active,
   &:hover {
-    background-color: $dk-primary !important;
-    border-color: $dk-primary !important;
+    background-color: $lt-smog !important;
+    border-color: $lt-smog !important;
     color: $white;
     outline: none;
     box-shadow: none !important;
-  }
+}
 }
 
 // Highlight color customization

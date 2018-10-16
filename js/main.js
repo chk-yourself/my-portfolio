@@ -1,25 +1,38 @@
 (function($) {
     "use strict"; // Start of use strict
 
-$('.navbar').on('click', 'a[href^="#"]', function (event) {
+    $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 300, 'linear');
+    });
 
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
+    $(window).scroll(function () {
+        const position = $(this).scrollTop();
+
+        $('.section').each(function() {
+            const target = $(this).offset().top;
+
+            const id = $(this).attr('id');
+            $(`.nav-link[href="#${id}"]`).removeClass('active');
+            if (position >= target) {
+                $('.nav-link').each(function() {
+                    const hash = $(this).attr('href').slice(1);
+                    if (hash === id) {
+                        $(this).addClass('active');
+                    } else {
+                        $(this).removeClass('active');
+                    }
+                });
+            }
+        });
+
 });
-
-/*
-
-$('.portfolio-modal').on('show.bs.modal', function(e) {
-    $(".navbar").addClass("d-none");
-  })
-  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
-    $(".navbar").removeClass("d-none");
-  })
-  */
+    
 
   feather.replace();
-
   
 
 })(jQuery);

@@ -102,8 +102,8 @@
   });
 
 projects.forEach(project => {
-  const devTags = project.devTags.map(tag => `<span class="project-tag project-tag--dev">${tag}</span>`).join('');
-  const desTags = project.desTags.map(tag => `<span class="project-tag project-tag--des">${tag}</span>`).join('');
+  const devTags = project.devTags.map(tag => `<span class="project-tag project-tag--dev">${tag},</span>`).join('');
+  const desTags = project.desTags.map((tag, i, arr) => `<span class="project-tag project-tag--des">${tag}${i < arr.length - 1 ? ',' : ''}</span>`).join('');
   const projectOverview = project.overview;
   const card = project.cardElem;
   card.find('.card__tags').html(devTags + desTags);

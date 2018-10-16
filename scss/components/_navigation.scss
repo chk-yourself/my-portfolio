@@ -17,7 +17,7 @@
     }
   }
   .navbar-brand {
-    color: #000;
+    color: $smog;
     font-size: 16px;
     font-family: $heading-font;
     text-transform: uppercase;
@@ -26,7 +26,7 @@
     &:active,
     &:focus,
     &:hover {
-      color: darken($primary, 10%);
+      color: $primary;
     }
     b {
       font-weight: 700;
@@ -34,7 +34,9 @@
   }
   .navbar-nav {
     .nav-item {
-      @include half-highlight;
+      &:not(.contact-item) {
+        @include half-highlight;
+      }
       margin: auto;
       .nav-link {
         font-family: $body-font;
@@ -44,7 +46,9 @@
         padding: 0;
         letter-spacing: 1px;
         color: $dk-smog;
-        &.active { background-size: 100% 100%; }
+        &.active { 
+          background-size: 100% 100%; 
+        }
       }
     }
   }
@@ -76,4 +80,17 @@
       }
     }
   }
+  }
+
+  .contact-link {
+    .feather {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .contact-item:hover {
+    .feather {
+      fill: $lt-primary;
+    }
   }
