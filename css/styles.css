@@ -1,3 +1,4 @@
+@import url("https://rsms.me/inter/inter-ui.css");
 html, body {
   font-size: 16px;
 }
@@ -10,7 +11,7 @@ html, body {
 
 body {
   overflow-x: hidden;
-  background-color: #f4f6f9;
+  background-color: #f3f4f6;
 }
 
 p {
@@ -19,11 +20,11 @@ p {
 }
 
 a {
-  color: #f95959;
+  color: #585ad5;
 }
 
 a:hover {
-  color: #f72828;
+  color: #3235c8;
 }
 
 .h1,
@@ -32,7 +33,7 @@ a:hover {
 .h4,
 .h5,
 .h6 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
 }
 
 .h1 {
@@ -47,7 +48,7 @@ a:hover {
   font-weight: 800;
   text-transform: uppercase;
   position: relative;
-  color: #1a2531;
+  color: #1d202b;
   /*
     &:before,
     &:after {
@@ -88,7 +89,7 @@ a:hover {
 
 .section {
   position: relative;
-  background: #f4f6f9;
+  background: #f3f4f6;
   padding: 48px 8px;
 }
 
@@ -112,7 +113,7 @@ a:hover {
 
 .btn,
 button {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
 }
@@ -128,13 +129,13 @@ button:hover {
 }
 
 .btn-primary {
-  background-color: #f95959;
-  border-color: #f95959;
+  background-color: #585ad5;
+  border-color: #585ad5;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:focus:active, .btn-primary:hover {
-  background-color: #455d7a !important;
-  border-color: #455d7a !important;
+  background-color: #4c536f !important;
+  border-color: #4c536f !important;
   color: #fff;
   outline: none;
   -webkit-box-shadow: none !important;
@@ -142,12 +143,12 @@ button:hover {
 }
 
 ::-moz-selection {
-  background: #ffbcb9;
+  background: #bec4ea;
   text-shadow: none;
 }
 
 ::selection {
-  background: #ffbcb9;
+  background: #bec4ea;
   text-shadow: none;
 }
 
@@ -164,7 +165,7 @@ img::-moz-selection {
 }
 
 body {
-  -webkit-tap-highlight-color: #ffbcb9;
+  -webkit-tap-highlight-color: #bec4ea;
 }
 
 .container {
@@ -199,7 +200,7 @@ body {
 
 .waves {
   fill: none;
-  stroke: #f95959;
+  stroke: #585ad5;
   stroke-width: 5px;
   width: 50px;
   position: relative;
@@ -253,7 +254,7 @@ body {
 }
 
 .navbar {
-  background-color: #f4f6f9;
+  background-color: #f3f4f6;
   padding: 0 1rem;
 }
 
@@ -261,31 +262,43 @@ body {
   font-size: 12px;
   right: 0;
   padding: 10px;
-  color: #f95959;
+  color: #3d4259;
 }
 
-.navbar .navbar-toggler i {
-  color: #f95959;
+.navbar .navbar-toggler .feather {
+  color: #3d4259;
+}
+
+.navbar .navbar-toggler:focus, .navbar .navbar-toggler:hover, .navbar .navbar-toggler:active {
+  color: #585ad5;
+}
+
+.navbar .navbar-toggler:focus .feather, .navbar .navbar-toggler:hover .feather, .navbar .navbar-toggler:active .feather {
+  color: #585ad5;
 }
 
 .navbar .show .nav-link {
-  margin: 16px;
+  margin: 12px;
 }
 
 .navbar .navbar-brand {
-  color: #334459;
+  color: #3d4259;
   font-size: 16px;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 300;
 }
 
 .navbar .navbar-brand.active, .navbar .navbar-brand:active, .navbar .navbar-brand:focus, .navbar .navbar-brand:hover {
-  color: #f95959;
+  color: #585ad5;
 }
 
 .navbar .navbar-brand b {
   font-weight: 700;
+}
+
+.navbar .navbar-nav {
+  padding: 16px 0;
 }
 
 .navbar .navbar-nav .nav-item {
@@ -294,8 +307,8 @@ body {
 
 .navbar .navbar-nav .nav-item:not(.contact-item) a {
   text-decoration: none;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(0, #ffbcb9));
-  background: linear-gradient(180deg, transparent 60%, #ffbcb9 0);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(0, #bec4ea));
+  background: linear-gradient(180deg, transparent 60%, #bec4ea 0);
   background-size: 0 100%;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -312,7 +325,7 @@ body {
   font-weight: 400;
   padding: 0;
   letter-spacing: 1px;
-  color: #1a2531;
+  color: #1d202b;
 }
 
 .navbar .navbar-nav .nav-item .nav-link.active {
@@ -336,7 +349,7 @@ body {
   .navbar.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #f4f6f9;
+    background-color: #f3f4f6;
   }
   .navbar.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -350,14 +363,20 @@ body {
 }
 
 .contact-item:hover .feather {
-  fill: #ffbcb9;
+  fill: #bec4ea;
+}
+
+.navbar-collapse.show .navbar-nav {
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 header.masthead {
   text-align: left;
-  color: #1a2531;
+  color: #1d202b;
   position: relative;
-  background: #f4f6f9;
+  background: #f3f4f6;
   background-image: none;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -371,11 +390,11 @@ header.masthead .intro-text {
   position: absolute;
   bottom: 20%;
   left: 5%;
-  color: #1a2531;
+  color: #1d202b;
 }
 
 header.masthead .intro-text .display-1 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 5rem;
   text-transform: capitalize;
@@ -388,7 +407,7 @@ header.masthead .intro-text .display-1 {
 }
 
 header.masthead .intro-text .display-2 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 2.1rem;
   line-height: .75;
@@ -401,7 +420,7 @@ header.masthead .intro-text .display-2 {
 }
 
 header.masthead .intro-text .display-3 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.4;
@@ -477,11 +496,11 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #f95959;
+  background-color: #585ad5;
 }
 
 #about {
-  background: #f4f6f9;
+  background: #f3f4f6;
 }
 
 #about .my-profile {
@@ -516,7 +535,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 #contact #contactForm label {
-  color: #334459;
+  color: #3d4259;
   font-family: "Inconsolata", "Courier New", Courier, monospace;
   font-size: 1rem;
   line-height: 1;
@@ -524,7 +543,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #contact #contactForm .label-required:after {
   content: "*";
-  color: #f95959;
+  color: #585ad5;
   margin-left: 0.1rem;
 }
 
@@ -546,40 +565,40 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 #contact #contactForm .form-control {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   font-weight: 300;
   border-radius: 0;
 }
 
 #contact #contactForm .form-control:focus {
-  border-color: #334459;
+  border-color: #3d4259;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 #contact #contactForm ::-webkit-input-placeholder {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: italic;
   color: #ced4da;
 }
 
 #contact #contactForm :-moz-placeholder {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: italic;
   color: #ced4da;
 }
 
 #contact #contactForm ::-moz-placeholder {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: italic;
   color: #ced4da;
 }
 
 #contact #contactForm :-ms-input-placeholder {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: italic;
   color: #ced4da;
@@ -631,11 +650,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 #projects .project-card:hover .card-footer .card-footer__text {
-  color: #1a2531;
+  color: #1d202b;
 }
 
 #projects .project-card:hover .card-footer .feather {
-  color: #1a2531;
+  color: #1d202b;
 }
 
 #projects .project-card .card__tags {
@@ -652,8 +671,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 #projects .project-card .project-tag--dev {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(0, rgba(255, 188, 185, 0.65)));
-  background: linear-gradient(180deg, transparent 70%, rgba(255, 188, 185, 0.65) 0);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(0, rgba(190, 196, 234, 0.65)));
+  background: linear-gradient(180deg, transparent 70%, rgba(190, 196, 234, 0.65) 0);
 }
 
 #projects .project-card .project-tag--des {
@@ -664,7 +683,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #projects .project-card .project-overview {
   font-size: 14px;
   width: 100%;
-  color: #334459;
+  color: #3d4259;
   padding: 0;
   line-height: 1.5;
 }
@@ -720,7 +739,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   font-size: 13px;
   line-height: 24px;
   text-transform: uppercase;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   letter-spacing: 0.02em;
   color: #868e96;
 }
@@ -763,7 +782,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-bottom: 1rem;
   font-size: .9rem;
   line-height: 1.6;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -791,7 +810,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .project-modal .modal-content .project__list {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Inter UI", Helvetica, Arial, sans-serif;
   font-weight: 300;
   -webkit-padding-start: 24px;
           padding-inline-start: 24px;
@@ -844,8 +863,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .project-tag--dev {
-  background-color: rgba(255, 188, 185, 0.5);
-  border-color: #ffbcb9;
+  background-color: rgba(190, 196, 234, 0.5);
+  border-color: #bec4ea;
 }
 
 .project-tag--des {
@@ -868,26 +887,37 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   text-align: center;
 }
 
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: "Inconsolata", "Courier New", Courier, monospace;
+}
+
 #skills .skill-set {
   margin: 0 auto;
   text-align: center;
 }
 
-#skills .skill-set ul {
-  list-style-type: none;
-  text-align: center;
+#skills .skill-set .skill-set__group {
+  text-align: left;
   padding-left: 0;
+  font-size: 0;
 }
 
-#skills .skill-set li {
-  padding: 0;
+#skills .skill {
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 5000px;
+  margin: 2px;
   font-family: "Inconsolata", "Courier New", Courier, monospace;
+  color: #495057;
+  border: 1px solid transparent;
 }
 
 #skills .skill-bar {
   height: 1rem;
   width: 75%;
-  border: 1px solid #fa6c6c;
+  border: 1px solid #8490D8;
   border-radius: 5px;
   margin-bottom: .5rem;
   display: inline-block;
@@ -897,7 +927,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #skills .skill-bar .skill-bar-inner {
   height: 1rem;
-  background: #fa6c6c;
+  background: #8490D8;
   display: block;
   vertical-align: middle;
 }
@@ -927,7 +957,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 #skills .split-left {
-  background: #334459;
+  background: #3d4259;
 }
 
 #skills .split-left h3 {
@@ -939,40 +969,16 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   color: #fff;
 }
 
-#skills .split-left .skill-set #skillOne {
-  width: 90%;
-}
-
-#skills .split-left .skill-set #skillTwo {
-  width: 85%;
-}
-
-#skills .split-left .skill-set #skillThree {
-  width: 80%;
-}
-
-#skills .split-left .skill-set #skillFour {
-  width: 80%;
-}
-
-#skills .split-left .skill-set #skillFive {
-  width: 95%;
-}
-
-#skills .split-left .skill-set #skillSix {
-  width: 90%;
-}
-
 #skills .split-right {
   background: #fff;
 }
 
 #skills .split-right h3 {
-  color: #233142;
+  color: #2d3142;
 }
 
 #skills .split-right .skill-set li {
-  color: #334459;
+  color: #3d4259;
 }
 
 #skills .split-right .skill-set #skillSeven {
@@ -1004,5 +1010,37 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     max-width: 75%;
     margin: 0 auto;
   }
+}
+
+.bar-95 {
+  width: 95%;
+}
+
+.bar-90 {
+  width: 90%;
+}
+
+.bar-85 {
+  width: 85%;
+}
+
+.bar-80 {
+  width: 80%;
+}
+
+.bar-70 {
+  width: 70%;
+}
+
+.bar-75 {
+  width: 75%;
+}
+
+.bar-65 {
+  width: 65%;
+}
+
+.bar-60 {
+  width: 60%;
 }
 /*# sourceMappingURL=styles.css.map */

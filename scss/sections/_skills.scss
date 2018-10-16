@@ -5,18 +5,28 @@
     margin: 0 0 24px 0;
     text-align: center;
   }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: $body-font;
+  }
   .skill-set {
     margin: 0 auto;
     text-align: center;
-    ul {
-      list-style-type: none;
-      text-align: center;
+    .skill-set__group {
+      text-align: left;
       padding-left: 0;
+      font-size: 0;
     }
-    li {
-      padding: 0;
-      font-family: $body-font;
-    }
+  }
+  .skill {
+    font-size: 16px;
+  line-height: 1;
+  border-radius: 5000px;
+  margin: 2px;
+  font-family: $body-font;
+  color: $gray-700;
+  border: 1px solid transparent;
   }
   .skill-bar {
     height: 1rem;
@@ -59,24 +69,6 @@
       li {
         color: #fff;
       }
-      #skillOne {
-        width: 90%;   
-      } 
-      #skillTwo {
-        width: 85%;
-      }
-      #skillThree {
-        width: 80%;    
-      }
-      #skillFour {
-        width: 80%;
-      }
-      #skillFive {
-        width: 95%;  
-      }
-      #skillSix {
-        width: 90%;
-      }
     }
   }
   .split-right {
@@ -115,4 +107,28 @@
         max-width: 75%;
         margin: 0 auto;
     }
+}
+.bar-95 {
+  width: 95%;
+}
+.bar-90 {
+  width: 90%;   
+}
+.bar-85 {
+  width: 85%;
+}
+.bar-80 {
+  width: 80%;
+}
+.bar-70 {
+  width: 70%;    
+}
+.bar-75 {
+  width: 75%;
+}
+.bar-65 {
+  width: 65%;
+}
+.bar-60 {
+  width: 60%;  
 }
