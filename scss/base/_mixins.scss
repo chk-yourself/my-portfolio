@@ -8,11 +8,9 @@
 }
 
 // Font Mixins
-@mixin serif-font {
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+
 @mixin body-font {
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Inconsolata', 'Courier New', Courier, monospace;
 }
 @mixin heading-font {
   font-family: 'Vision', Helvetica, Arial, sans-serif;
