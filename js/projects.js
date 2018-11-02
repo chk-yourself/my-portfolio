@@ -9,6 +9,7 @@
       this.url = url;
       this.overview = overview;
     }
+
     get cardElem() {
       return $(`[data-title="${this.title}"]`).parent();
     }
@@ -75,21 +76,38 @@
     ),
     new Project(
       'Pomodoro Clock',
-      '<p>I designed and built a simple timer app, modeled after the Pomodoro Technique, a time-management framework that involves breaking work into time blocks, separated by 5 minute breaks.</p>',
+      `<p>I designed and built a simple timer app, modeled after the Pomodoro Technique, a time-management framework that involves breaking work into time blocks, separated by 5 minute breaks.</p>`,
       ['React', 'HTML', 'CSS', 'SCSS', 'SVG'],
       ['Web Design', 'UI Design'],
       'https://codepen.io/xtini/full/qJaLvb/',
       'a timer app to help boost productivity'
+    ),
+    new Project(
+      'Punk Beer SPA',
+      `<p>I designed and built a single-page application that renders beer data pulled from the Punk Beer API into reusable, easily searchable components.</p>
+      <h4 class="h4">Features include:</h4>
+      <ul class="project__list">
+      <li>Customizable "Favorites" collection that persists to localStorage</li>
+      <li>Search bar to filter beers by keywords, including name, ingredients, and food pairings</li>
+      </ul>`,
+      ['React', 'Redux', 'Node/npm', 'Webpack', 'HTML', 'CSS', 'SCSS'],
+      ['Web Design', 'UI Design', 'Responsive Design'],
+      'https://chk-yourself.github.io/punk-beer-app/',
+      'a beer finding and rating app'
     )
   ];
 
-  $('#projectDetailsModal').on('show.bs.modal', function (e) {
+  $('#projectDetailsModal').on('show.bs.modal', function(e) {
     const target = $(e.relatedTarget);
     const projectTitle = target.data('title');
     const project = projects.find(x => x.title === projectTitle);
     const projectDesc = project.desc;
-    const devTags = project.devTags.map(tag => `<span class="project-tag project-tag--dev">${tag}</span>`).join('');
-    const desTags = project.desTags.map(tag => `<span class="project-tag project-tag--des">${tag}</span>`).join('');
+    const devTags = project.devTags
+      .map(tag => `<span class="project-tag project-tag--dev">${tag}</span>`)
+      .join('');
+    const desTags = project.desTags
+      .map(tag => `<span class="project-tag project-tag--des">${tag}</span>`)
+      .join('');
     const projectURL = project.url;
     const projectOverview = project.overview;
     const modal = $(this);
@@ -101,13 +119,19 @@
     modal.find('#projectLink').attr('href', projectURL);
   });
 
-projects.forEach(project => {
-  const devTags = project.devTags.map(tag => `<span class="project-tag project-tag--dev">${tag},</span>`).join('');
-  const desTags = project.desTags.map((tag, i, arr) => `<span class="project-tag project-tag--des">${tag}${i < arr.length - 1 ? ',' : ''}</span>`).join('');
-  const projectOverview = project.overview;
-  const card = project.cardElem;
-  card.find('.card__tags').html(devTags + desTags);
-  card.find('.project-overview').text(projectOverview);
-});
-
-}(jQuery));
+  projects.forEach(project => {
+    const devTags = project.devTags
+      .map(tag => `<span class="project-tag project-tag--dev">${tag},</span>`)
+      .join('');
+    const desTags = project.desTags
+      .map(
+        (tag, i, arr) =>
+          `<span class="project-tag project-tag--des">${tag}${i < arr.length - 1 ? ',' : ''}</span>`
+      )
+      .join('');
+    const projectOverview = project.overview;
+    const card = project.cardElem;
+    card.find('.card__tags').html(devTags + desTags);
+    card.find('.project-overview').text(projectOverview);
+  });
+})(jQuery);
