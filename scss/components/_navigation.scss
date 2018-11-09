@@ -109,8 +109,7 @@
   .navbar-collapse {
     &.show {
       .navbar-nav {
-        background-color: $white;
-        @include box-shadow(1);
+      //  background-color: $white;
       }
     }
   }
