@@ -48,7 +48,6 @@
         @include highlight(x, $lt-primary, 45%);
        }
       }
-      margin: auto;
       .nav-link {
         font-family: $body-font;
         font-size: 16px;
@@ -107,9 +106,27 @@
   }
 
   .navbar-collapse {
+    .navbar-nav {
+      background-color: $gray-000;
+      @include md {
+        margin-left: auto;
+      }
+    }
     &.show {
       .navbar-nav {
-      //  background-color: $white;
+        height: 100vh;
+        width: 100vw;
+        margin-right: -16px;
+        margin-left: -16px;
+        position: absolute;
+        padding-left: 40px;
+        transition: all .2s ease-in-out;
+        .nav-item {
+          padding: 8px 0;
+        }
+        .nav-link {
+          display: inline;
+        }
       }
     }
   }

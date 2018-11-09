@@ -275,6 +275,10 @@ body {
   }
 }
 
+.text--primary {
+  color: #f06595;
+}
+
 .navbar {
   background-color: #f8f9fa;
   padding: 0 1rem;
@@ -321,10 +325,6 @@ body {
 
 .navbar .navbar-nav {
   padding: 16px 0;
-}
-
-.navbar .navbar-nav .nav-item {
-  margin: auto;
 }
 
 .navbar .navbar-nav .nav-item:not(.contact-item) a {
@@ -390,6 +390,35 @@ body {
   fill: #fcc2d7;
 }
 
+.navbar-collapse .navbar-nav {
+  background-color: #f8f9fa;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse .navbar-nav {
+    margin-left: auto;
+  }
+}
+
+.navbar-collapse.show .navbar-nav {
+  height: 100vh;
+  width: 100vw;
+  margin-right: -16px;
+  margin-left: -16px;
+  position: absolute;
+  padding-left: 40px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.navbar-collapse.show .navbar-nav .nav-item {
+  padding: 8px 0;
+}
+
+.navbar-collapse.show .navbar-nav .nav-link {
+  display: inline;
+}
+
 header.masthead {
   text-align: left;
   color: #1a2531;
@@ -403,53 +432,42 @@ header.masthead {
   background-size: cover;
 }
 
-header.masthead .intro-text {
+header.masthead .intro {
   position: absolute;
   bottom: 20%;
   left: 5%;
   color: #1a2531;
 }
 
-header.masthead .intro-text .display-1 {
-  font-family: "Inter UI", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 5rem;
-  text-transform: capitalize;
-}
-
-@media (min-width: 768px) {
-  header.masthead .intro-text .display-1 {
-    font-size: 6rem;
-  }
-}
-
-header.masthead .intro-text .display-2 {
+header.masthead .intro .display-2 {
   font-family: "Inter UI", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  font-size: 2.1rem;
+  letter-spacing: -.03em;
+  font-size: 1.8rem;
   line-height: .75;
+  margin-bottom: 24px;
 }
 
 @media (min-width: 768px) {
-  header.masthead .intro-text .display-2 {
-    font-size: 2.6rem;
+  header.masthead .intro .display-2 {
+    font-size: 2.2rem;
   }
 }
 
-header.masthead .intro-text .display-3 {
-  font-family: "Inter UI", Helvetica, Arial, sans-serif;
+header.masthead .intro .display-3 {
+  font-family: "Inconsolata", "Courier New", Courier, monospace;
   font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.4;
 }
 
 @media (min-width: 768px) {
-  header.masthead .intro-text .display-3 {
+  header.masthead .intro .display-3 {
     font-size: 1.3rem;
   }
 }
 
-header.masthead .intro-text .btn {
+header.masthead .intro .btn {
   margin-top: 1.5rem;
 }
 
