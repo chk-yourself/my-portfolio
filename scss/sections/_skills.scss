@@ -55,7 +55,7 @@
   }
   .split-content {
     padding: 24px 16px;
-    @include box-shadow(1);
+    @include box-shadow("sm");
     max-width: 320px;
     margin: 0 auto;
   }

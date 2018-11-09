@@ -9,7 +9,7 @@ html, body {
 
 body {
   overflow-x: hidden;
-  background-color: $feather;
+  background-color: $gray-000;
 }
 
 p {
@@ -18,10 +18,19 @@ p {
 }
 
 a {
-  color: $primary;
+  text-decoration: none;
   &:hover {
-    color: darken($primary, 10%);
+    text-decoration: none;
   }
+}
+
+.link--inline {
+    color: $gray-900;
+    font-weight: 500;
+    @include highlight(y, $lt-accent-2, 30%);
+    &:hover {
+      color: $gray-900;
+    }
 }
 
 .h1,
@@ -84,9 +93,9 @@ a {
 
 .section {
   position: relative;
-  background: $feather;
   padding: 48px 8px;
   .section-title {
+    margin-top: 40px;
     margin-bottom: 2rem;
     }
   h2 {
@@ -107,6 +116,7 @@ button {
   font-family: $heading-font;
   font-weight: 300;
   font-size: 16px;
+  border-radius: 2px;
   &:active, 
   &:focus,
   &:focus:active,

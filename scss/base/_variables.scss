@@ -3,7 +3,8 @@
 // Colors
 
 $white: #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-000: #f8f9fa;
+$gray-100: #f1f3f5 !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -13,16 +14,26 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 
-$dk-primary: #c02030;
-$primary: #f95959 !default;
-$lt-primary: #ffbcb9;
-$md-primary: #fa6c6c;
+$dk-primary: #c2255c;
+$primary: #f06595 !default;
+$lt-primary: #fcc2d7;
+$md-primary: #f783ac;
 $smog: #334459;
 $lt-smog: #455d7a;
 $md-smog: #233142;
 $dk-smog: #1a2531;
 $feather: #f4f6f9;
 $lt-blue: #b9d9ff;
+
+$lt-accent: #bac8ff;
+$md-accent: #748ffc;
+$accent: #5c7cfa !default;
+$dk-accent: #3b5bdb;
+
+$lt-accent-2: #99e9f2;
+$md-accent-2: #3bc9db;
+$accent-2: #22b8cf;
+$dk-accent-2: #0c8599;
 
 // Fonts
 $heading-font: 'Inter UI', Helvetica, Arial, sans-serif;
@@ -49,3 +60,6 @@ $screen-md-min: 768px;  // Small tablets (portrait view)
 $screen-lg-min: 992px;  // Tablets and small desktops
 $screen-xl-min: 1200px; // Large tablets and desktops
 $screen-xx-min: 1440px;
+
+$x: x;
+$y: y;
