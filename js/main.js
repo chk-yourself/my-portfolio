@@ -3,6 +3,10 @@
 
     $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
+
+        if ($('#navbarResponsive').hasClass('show')) {
+            $('#navbarResponsive').removeClass('show');
+        }
     
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top

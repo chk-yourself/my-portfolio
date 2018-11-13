@@ -25,19 +25,18 @@
     }
   }
   .navbar-brand {
-    color: $smog;
-    font-size: 16px;
+    color: $gray-800;
+    font-size: 1.4rem;
     font-family: $heading-font;
-    text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 700;
     &.active,
     &:active,
     &:focus,
     &:hover {
       color: $primary;
     }
-    b {
-      font-weight: 700;
+    @include md {
+      font-size: 1.6rem;
     }
   }
   .navbar-nav {
@@ -56,6 +55,7 @@
         padding: 0;
         letter-spacing: 1px;
         color: $dk-smog;
+        display: inline-block;
         &.active { 
           background-size: 100% 45%; 
         }

@@ -50,16 +50,19 @@ a {
 .h2 {
   padding: 0;
   margin: 0;
-  font-size: 2.8rem;
-  font-weight: 800;
-  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 700;
   position: relative;
-  color: $dk-smog;
+  color: $gray-800;
+  letter-spacing: -.02em;
   &.text-right {
     right: 10%;
   }
   &.text-left {
     left: 10%;
+  }
+  @include md {
+    font-size: 2.6rem;
   }
   /*
     &:before,
@@ -93,10 +96,13 @@ a {
 
 .section {
   position: relative;
-  padding: 48px 8px;
+  padding: 48px 16px;
   .section-title {
-    margin-top: 40px;
+    margin-top: 24px;
     margin-bottom: 2rem;
+    }
+    @include md {
+      margin-bottom: 2.4rem;
     }
   h2 {
     position: relative;

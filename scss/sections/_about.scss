@@ -2,20 +2,19 @@
 
 #about {
   .my-profile {
-    background-color: $white;
-    padding: 24px 16px;
-    max-width: 500px;
+    padding: 0 16px;
+    max-width: 100%;
     margin: 0 auto;
     height: 100%;
-    @include box-shadow("sm");
+    @include md {
+      max-width: 500px;
+      margin: 0 0 0 auto;
+    }
     img {
       width: 100%;
       height: 100%;
       z-index: -1;
     }
-  }
-  p {
-    padding: 15px 20px;
   }
 }
 

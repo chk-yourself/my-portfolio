@@ -13,17 +13,20 @@ header.masthead {
   .intro {
     position: absolute;
     bottom: 20%;
-    left: 5%;
-    color: $dk-smog;
+    left: 1rem;
+    color: $gray-800;
+    @include md {
+      left: 0;
+    }
     .display-2 {
       font-family: $heading-font;
-      font-weight: 500;
+      font-weight: 700;
       letter-spacing: -.03em;
-      font-size: 1.8rem;
-      line-height: .75;
+      font-size: 2.2rem;
+      line-height: 1;
       margin-bottom: 24px;
       @include md {
-        font-size: 2.2rem;
+        font-size: 2.6rem;
       }
     }
     .display-3 {

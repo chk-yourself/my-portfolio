@@ -53,7 +53,7 @@
       <p>I also authored all written content and sourced supporting imagery that reflects the brand's voice and style.</p>`,
       ['HTML', 'CSS', 'Squarespace'],
       ['Web Design', 'Responsive Design', 'Branding', 'Content Strategy', 'Copywriting'],
-      'http://anthonyhkim.com/',
+      'https://anthonyhkim.com/',
       'a corporate branding + web design project'
     ),
     new Project(
@@ -63,7 +63,7 @@
       <p>I also authored all written content and sourced supporting imagery that reflects the brand's voice and style.</p>`,
       ['HTML', 'CSS', 'Squarespace'],
       ['Web Design', 'Responsive Design', 'Branding', 'Content Strategy', 'Copywriting'],
-      'http://www.celebritycarwash.com/',
+      'https://www.celebritycarwash.com/',
       'a small business branding + web design project'
     ),
     new Project(
@@ -123,14 +123,13 @@
 
   projects.forEach(project => {
     const devTags = project.devTags
-      .map(tag => `<span class="project-tag project-tag--dev">${tag}</span>`)
-      .join('');
+      .map(tag => `<span class="project-tag project-tag--dev">${tag}</span>`);
     const desTags = project.desTags
-      .map((tag, i, arr) => `<span class="project-tag project-tag--des">${tag}</span>`)
-      .join('');
+      .map((tag, i, arr) => `<span class="project-tag project-tag--des">${tag}</span>`);
+    const allTags = [...devTags, ...desTags].join(', ');
     const projectOverview = project.overview;
     const card = project.cardElem;
-    card.find('.card__tags').html(devTags + desTags);
+    card.find('.card__tags').html(allTags);
     card.find('.project-overview').text(projectOverview);
   });
 })(jQuery);

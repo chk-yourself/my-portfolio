@@ -13,6 +13,9 @@
   .skill-set {
     margin: 0 auto;
     text-align: center;
+    li {
+      color: $gray-700;
+    }
     .skill-set__group {
       text-align: left;
       padding-left: 0;
@@ -45,9 +48,11 @@
       }
   }
   .split-col {
-    padding: 16px;
+    padding: 0px;
+    margin: 8px 0;
     @include sm {
       padding: 8px;
+      margin: 0;
     }
     @include md {
       padding: 16px;
@@ -58,53 +63,23 @@
     @include box-shadow("sm");
     max-width: 320px;
     margin: 0 auto;
+    background-color: $white;
   }
   .split-left {
-    background: $smog;
     h3 {
-      color: #fff;
-      -webkit-font-smoothing: antialiased;
-    }
-    .skill-set {
-      li {
-        color: #fff;
-      }
+      color: $primary;
     }
   }
   .split-right {
-    background: $white;
     h3 {
-      color: $md-smog;
-    }
-    .skill-set {
-      li {
-        color: $smog;
-      }
-      #skillSeven {
-        width: 90%;
-      } 
-      #skillEight {
-        width: 85%;
-      }
-      #skillNine {
-        width: 80%;    
-      }
-      #skillTen {
-        width: 80%;
-      }
-      #skillEleven {
-        width: 95%;  
-      }
-      #skillTwelve {
-        width: 90%;
-      }
+      color: $accent;
     }
   }
 }
 
 @media(min-width:992px) {
     #skillsChart {
-        max-width: 75%;
+        max-width: 80%;
         margin: 0 auto;
     }
 }
