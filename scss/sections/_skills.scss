@@ -48,8 +48,8 @@
       }
   }
   .split-col {
-    padding: 0px;
-    margin: 8px 0;
+    padding: 0 16px;
+    margin: 16px 0;
     @include sm {
       padding: 8px;
       margin: 0;
@@ -60,10 +60,11 @@
   }
   .split-content {
     padding: 24px 16px;
-    @include box-shadow("sm");
-    max-width: 320px;
+    // @include box-shadow("sm");
+    max-width: 300px;
     margin: 0 auto;
-    background-color: $white;
+    // background-color: $white;
+    border: 1px solid $gray-700;
   }
   .split-left {
     h3 {

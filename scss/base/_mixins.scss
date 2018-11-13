@@ -27,7 +27,7 @@
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 0 $startLength;
-    &:hover, &:focus {
+    &:hover {
       background-size: $endLength $startLength;
     }
   } @else if $axis == y {
@@ -35,7 +35,7 @@
     background-repeat: repeat-x;
     background-position: 0 100%;
     background-size: $startLength $startLength;
-    &:hover, &:focus {
+    &:hover {
       background-size: $endLength $endLength;
     }
   }

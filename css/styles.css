@@ -40,7 +40,7 @@ a:hover {
   background-size: 30% 30%;
 }
 
-.link--inline:hover, .link--inline:focus {
+.link--inline:hover {
   background-size: 100% 100%;
 }
 
@@ -355,7 +355,7 @@ body {
   background-size: 0 45%;
 }
 
-.navbar .navbar-nav .nav-item:not(.contact-item) a:hover, .navbar .navbar-nav .nav-item:not(.contact-item) a:focus {
+.navbar .navbar-nav .nav-item:not(.contact-item) a:hover {
   background-size: 100% 45%;
 }
 
@@ -745,6 +745,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   color: #334459;
   padding: 0;
   line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
 #projects .project-card .project-link {
@@ -1001,8 +1002,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 #skills .split-col {
-  padding: 0px;
-  margin: 8px 0;
+  padding: 0 16px;
+  margin: 16px 0;
 }
 
 @media (min-width: 576px) {
@@ -1020,11 +1021,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #skills .split-content {
   padding: 24px 16px;
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  max-width: 320px;
+  max-width: 300px;
   margin: 0 auto;
-  background-color: #fff;
+  border: 1px solid #495057;
 }
 
 #skills .split-left h3 {

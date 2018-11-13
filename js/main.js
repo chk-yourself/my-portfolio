@@ -2,7 +2,7 @@
     "use strict"; // Start of use strict
 
     $('a[href*="#"]').on('click', function (e) {
-        e.preventDefault();
+       e.preventDefault();
 
         if ($('#navbarResponsive').hasClass('show')) {
             $('#navbarResponsive').removeClass('show');
