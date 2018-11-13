@@ -1,11 +1,7 @@
 // Styling for the contact section
 #contact {
-  .section-title {
-    text-align: center;
-  }
   h2 {
     margin: 0 auto;
-    text-align: center;
     left: 0;
     right: 0;
   }
@@ -75,5 +71,22 @@
   #contactForm {
     max-width: 75%;
     margin: 0 auto;
+  }
+}
+
+.contact-info {
+  list-style: none;
+  display: flex;
+  max-width: 200px;
+  padding: 0;
+  justify-content: space-between;
+  .contact-item {
+    .contact-link {
+      color: $gray-700;
+    }
+    .feather {
+      width: 24px;
+      height: 24px;
+    }
   }
 }

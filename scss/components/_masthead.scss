@@ -10,10 +10,16 @@ header.masthead {
   width: 100vw;
   height: 100vh;
   @include background-cover;
+  @include md {
+    width: calc(100vw - 96px);
+    width: calc(100vw - 96px);
+    padding: 0 16px;
+    margin: 0 auto;
+  }
   .intro {
     position: absolute;
     bottom: 20%;
-    left: 1rem;
+    left: 1.5rem;
     color: $gray-800;
     @include md {
       left: 0;
