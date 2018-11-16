@@ -50,11 +50,11 @@ a {
 .h2 {
   padding: 0;
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   position: relative;
   color: $gray-800;
-  letter-spacing: -.02em;
+  letter-spacing: -.09em;
   &.text-right {
     right: 10%;
   }
@@ -62,7 +62,7 @@ a {
     left: 10%;
   }
   @include md {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
   }
   /*
     &:before,

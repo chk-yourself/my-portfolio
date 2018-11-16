@@ -18,24 +18,25 @@ header.masthead {
   }
   .intro {
     position: absolute;
-    bottom: 20%;
-    left: 1.5rem;
+    bottom: 30%;
+    width: 100%;
+    padding: 1rem;
     color: $gray-800;
     @include md {
       left: 0;
     }
-    .display-2 {
+    .display-1 {
       font-family: $heading-font;
       font-weight: 700;
-      letter-spacing: -.03em;
-      font-size: 2.2rem;
-      line-height: 1;
+      letter-spacing: -.1em;
+      font-size: 2.8rem;
+      line-height: 1.2;
       margin-bottom: 24px;
       @include md {
-        font-size: 2.6rem;
+        font-size: 3.4rem;
       }
     }
-    .display-3 {
+    .display-2 {
       font-family: $body-font;
       font-size: 1.1rem;
       font-weight: 300;
@@ -52,8 +53,8 @@ header.masthead {
 
 .scroll-icon {
   position: absolute;
-  left: calc(50% - 25px);
-  bottom: 25px;
+  left: calc(50% - 47px);
+  bottom: 47px;
   z-index: 99;
   font-size: 11px;
   text-align: center;
@@ -66,3 +67,5 @@ header.masthead {
     display: inline-block;
   }
 }
+
+
