@@ -63,8 +63,8 @@
     // @include box-shadow("sm");
     max-width: 300px;
     margin: 0 auto;
-    // background-color: $white;
-    border: 1px solid $gray-700;
+    background-color: rgba($white, .6);
+    border: 1.5px solid $gray-600;
   }
   .split-left {
     h3 {

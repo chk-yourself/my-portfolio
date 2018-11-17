@@ -165,8 +165,8 @@ button:focus,
 button:focus:active,
 button:hover {
   outline: none;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .btn-primary {
@@ -516,7 +516,7 @@ header.masthead .intro {
   position: absolute;
   bottom: 30%;
   width: 100%;
-  padding: 1rem;
+  padding-left: 1.5rem;
   color: #343a40;
 }
 
@@ -560,10 +560,10 @@ header.masthead .intro .btn {
 
 .scroll-icon {
   position: absolute;
-  left: calc(50% - 47px);
+  left: 1.5rem;
   bottom: 47px;
   z-index: 99;
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
   vertical-align: middle;
   font-family: "Inconsolata", "Courier New", Courier, monospace;
@@ -572,8 +572,7 @@ header.masthead .intro .btn {
 }
 
 .scroll-icon .arrow {
-  font-size: 12px;
-  margin-right: 5px;
+  margin-right: 8px;
   display: inline-block;
 }
 
@@ -906,9 +905,32 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .project-modal .modal-content .project-details__title {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  margin: 16px 0;
   text-align: center;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  line-height: 1.4;
+}
+
+.project-modal .modal-content .project-details__title a {
+  color: #212529;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #99e9f2), to(#99e9f2));
+  background: linear-gradient(to bottom, #99e9f2 0, #99e9f2 100%);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 0 0;
+}
+
+.project-modal .modal-content .project-details__title a:hover {
+  background-size: 30% 30%;
+}
+
+.project-modal .modal-content .project-details__title a:hover {
+  color: #212529;
 }
 
 @media (min-width: 768px) {
@@ -924,7 +946,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .project-modal .modal-content p {
-  margin-bottom: 1.6rem;
+  margin-bottom: 2rem;
   font-size: .9rem;
   line-height: 1.6;
   font-family: "Inter UI", Helvetica, Arial, sans-serif;
@@ -952,6 +974,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   text-transform: uppercase;
   text-align: center;
   margin: 1.5rem 0 .5rem;
+  font-weight: 600;
 }
 
 .project-modal .modal-content .project__list {
@@ -1001,7 +1024,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   display: inline-block;
   padding: .4em .85em;
   border-radius: 5000px;
-  margin: .25em;
+  margin: .25em .2em;
   font-family: "Inconsolata", "Courier New", Courier, monospace;
   color: #495057;
   border: 2px solid transparent;
@@ -1018,7 +1041,23 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .project__btn {
-  font-size: 14px;
+  font-size: 16px;
+  background-color: #495057;
+  border-color: #495057;
+  border-radius: 0;
+  color: #fff;
+  font-weight: 600;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.project__btn:active, .project__btn:focus, .project__btn:focus:active, .project__btn:hover {
+  background-color: #212529 !important;
+  border-color: #212529 !important;
+  color: #fff;
+  outline: none;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .project__btn .feather {
@@ -1108,7 +1147,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   padding: 24px 16px;
   max-width: 300px;
   margin: 0 auto;
-  border: 1px solid #495057;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1.5px solid #868e96;
 }
 
 #skills .split-left h3 {

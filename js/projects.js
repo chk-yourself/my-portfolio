@@ -114,6 +114,7 @@
     const projectOverview = project.overview;
     const modal = $(this);
     modal.find('#projectTitle').text(projectTitle);
+    modal.find('#projectTitle').attr('href', projectURL);
     modal.find('#projectOverview').text(projectOverview);
     modal.find('#projectDesc').html(projectDesc);
     modal.find('#devTags').html(devTags);
