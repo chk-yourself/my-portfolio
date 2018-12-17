@@ -99,8 +99,8 @@
     ),
     new Project(
       'Flume',
-      `<p>I developed a dependency-free, flexible plugin for building responsive, highly-customizable, touch-enabled sliders + carousels.</p>
-      <h4 class="h4">Features:</h4>
+      `<p>I built a dependency-free, flexible plugin (<a class="link--inline" href="https://github.com/chk-yourself/flume">view on GitHub</a>) for creating responsive, highly-customizable, touch-enabled sliders + carousels with ease.</p>
+      <h4 class="h4">Features:</h4> 
       <ul class="project__list">
       <li>Responsive Design</li>
       <li>Touch/swipe support</li>
