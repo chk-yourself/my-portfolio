@@ -96,6 +96,28 @@
       ['Responsive Design', 'Web Design', 'UI Design'],
       'https://chk-yourself.github.io/punk-beer-app/',
       'an app for exploring, finding, & rating beers'
+    ),
+    new Project(
+      'Flume',
+      `<p>I developed a dependency-free, flexible plugin for building responsive, highly-customizable, touch-enabled sliders + carousels.</p>
+      <h4 class="h4">Features:</h4>
+      <ul class="project__list">
+      <li>Responsive Design</li>
+      <li>Touch/swipe support</li>
+      <li>CSS3 Sliding Transitions</li>
+      </ul>
+      <h4 class="h4">Customizable settings include:</h4>
+      <ul class="project__list">
+      <li>Infinite loop</li>
+      <li>Autoplay</li>
+      <li>Dot indicators</li>
+      <li>Arrow indicators</li>
+      <li>Dot indicators</li>
+      </ul>`,
+      ['JavaScript', 'HTML', 'CSS', 'SCSS', 'Node', 'Webpack'],
+      ['Responsive Design', 'Web Design', 'UI Design'],
+      'https://chk-yourself.github.io/flume/',
+      'a dependency-free, modern slider/carousel plugin'
     )
   ];
 
