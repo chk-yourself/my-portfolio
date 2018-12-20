@@ -21,7 +21,7 @@
 
 @mixin highlight($axis, $color, $startLength, $endLength: 100%) {
   text-decoration: none;
-  transition: all .2s ease-in-out;
+  transition: background .2s ease-in-out;
   @if $axis == x {
     background: linear-gradient(to right, $color 0, $color 100%);
     background-position: 0 100%;

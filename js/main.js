@@ -6,6 +6,7 @@
 
         if ($('#navbarResponsive').hasClass('show')) {
             $('#navbarResponsive').removeClass('show');
+            $('body').removeClass('menu-open');
         }
     
         $('html, body').animate({
@@ -32,9 +33,15 @@
                 });
             }
         });
-
 });
-    
+
+$('button[data-toggle="collapse"]').on('click', function(e) {
+    if ($('#navbarResponsive').hasClass('show')) {
+        $('body').removeClass('menu-open');
+    } else {
+        $('body').addClass('menu-open');
+    }
+});
 
   feather.replace();
   

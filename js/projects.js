@@ -40,7 +40,7 @@
     ),
     new Project(
       'Makerbook Refresh',
-      '<p>I rebuilt and redesigned <a class="link--inline" href="http://makerbook.net/">Makerbook</a>, a single-page application that features digital design resources, with a card-based layout and off-canvas menu to increase responsiveness, facilitate navigation, and present content in a more digestible format.</p>',
+      '<p>I rebuilt and redesigned Makerbook (<a class="link--inline" href="http://makerbook.net/">view original design</a>), a single-page application that features digital design resources, with a card-based layout and off-canvas menu to increase responsiveness, facilitate navigation, and present content in a more digestible format.</p>',
       ['React', 'React Router', 'Node/npm', 'Webpack', 'HTML', 'CSS', 'SCSS'],
       ['UX/UI Design', 'Web Design', 'Responsive Design'],
       'https://chk-yourself.github.io/makerbook-refresh/',
