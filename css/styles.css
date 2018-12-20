@@ -1011,7 +1011,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .project-modal .btn-wrapper {
   text-align: center;
-  margin-top: 32px;
+  margin: 32px 0 48px;
 }
 
 .project-details__tags {
@@ -1068,7 +1068,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .project-details__section {
   max-width: 560px;
-  margin: 0 auto;
+  margin: 32px auto;
 }
 
 #skills .h3 {
