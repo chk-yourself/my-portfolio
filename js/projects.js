@@ -112,7 +112,6 @@
       <li>Autoplay</li>
       <li>Dot indicators</li>
       <li>Arrow indicators</li>
-      <li>Dot indicators</li>
       </ul>`,
       ['JavaScript', 'HTML', 'CSS', 'SCSS', 'Node', 'Webpack'],
       ['Responsive Design', 'Web Design', 'UI Design'],
