@@ -17,8 +17,33 @@
 
   const projects = [
     new Project(
+      'Workflow',
+      `<p>Workflow is a project management single-page application, inspired by Asana and Trello, and built with React, Redux, and Firebase, where users can create shared projects as mobile-friendly, drag-and-drop Kanban boards or todo lists, and collaborate in real-time. <a class="link--inline" href="https://github.com/chk-yourself/workflow">View on GitHub</a></p>
+      <h4 class="h4">Features include:</h4>
+      <ul class="project__list">
+      <li>real-time collaboration across multiple users</li>
+      <li>user authentication & presence detection</li>
+      <li>mobile-friendly, drag-and-drop Kanban boards and todo lists</li>
+      <li>custom rich text editor with mentions support</li>
+      <li>calendar date picker to set due dates</li>
+      <li>typeahead search to quickly find tasks by name, project, tags, or keywords</li>
+      <li>task sorting, filtering, and prioritizing</li>
+      <li>task labeling with color-coded tags</li>
+      <li>user <a class="link--inline" href="https://wrkflw.tk/guide">guide</a> to onboard new users</li>
+      <li>task comments with relative timestamps</li>
+      <li>subtasks to break down tasks into smaller steps</li>
+      <li>activity notifications</li>
+      <li>+ more</li>
+      </ul>
+      `,
+      ['React', 'Redux', 'Firebase', 'Node', 'HTML', 'CSS', 'SCSS'],
+      ['UX/UI Design', 'Web Design', 'Responsive Design'],
+      'https://wrkflw.tk',
+      'a real-time, project management app, inspired by Asana and Trello'
+    ),
+    new Project(
       'Lemonade',
-      `<p>Lemonade is a todo-app that allows you to create, delete, edit, & store tasks, set due dates, pin priority items, add subtasks & notes, categorize tasks with custom, color-coded tags, create new lists & organize them into folders, and filter tasks by completion status, due date, tags, & keywords.</p>
+      `<p>Lemonade is a todo-app that allows you to create, delete, edit, & store tasks, set due dates, pin priority items, add subtasks & notes, categorize tasks with custom, color-coded tags, create new lists & organize them into folders, and filter tasks by completion status, due date, tags, & keywords. <a class="link--inline" href="https://github.com/chk-yourself/lemonade">View on GitHub</a></p>
       <h4 class="h4">UI Components include:</h4>
       <ul class="project__list">
       <li>interactive onboarding tour</li>
@@ -32,7 +57,8 @@
       <li>accordion navigation</li>
       <li>breadcrumb navigation</li>
       <li>off-canvas navigation</li>
-      </ul>`,
+      </ul>
+      `,
       ['JavaScript', 'JSON', 'HTML', 'CSS', 'SCSS'],
       ['UX/UI Design', 'Web Design', 'Responsive Design'],
       'https://chk-yourself.github.io/lemonade/',
@@ -40,8 +66,8 @@
     ),
     new Project(
       'Makerbook Refresh',
-      '<p>I rebuilt and redesigned Makerbook (<a class="link--inline" href="http://makerbook.net/">view original design</a>), a single-page application that features digital design resources, with a card-based layout and off-canvas menu to increase responsiveness, facilitate navigation, and present content in a more digestible format.</p>',
-      ['React', 'React Router', 'Node/npm', 'Webpack', 'HTML', 'CSS', 'SCSS'],
+      `<p>I rebuilt and redesigned Makerbook (<a class="link--inline" href="http://makerbook.net/">view original design</a>), a single-page application that features digital design resources, with a card-based layout and off-canvas menu to increase responsiveness, facilitate navigation, and present content in a more digestible format. <a class="link--inline" href="https://github.com/chk-yourself/makerbook-refresh">View on GitHub</a></p>`,
+      ['React', 'HTML', 'CSS', 'SCSS'],
       ['UX/UI Design', 'Web Design', 'Responsive Design'],
       'https://chk-yourself.github.io/makerbook-refresh/',
       'a single-page application redesign project'
@@ -84,22 +110,23 @@
     ),
     new Project(
       'Punk Beer SPA',
-      `<p>I designed and built a single-page app that transforms data pulled from the <a class="link--inline" href="https://punkapi.com/">Punk API</a> into an easily searchable, user-friendly product catalog for <a class="link--inline" href="https://www.brewdog.com/usa/">BrewDog</a> beers, using React and Redux.
+      `<p>I designed and built a single-page app that transforms data pulled from the <a class="link--inline" href="https://punkapi.com/">Punk API</a> into an easily searchable, user-friendly product catalog for <a class="link--inline" href="https://www.brewdog.com/usa/">BrewDog</a> beers, using React and Redux. <a class="link--inline" href="https://github.com/chk-yourself/punk-beer-app">View on GitHub</a>
       </p>
       <h4 class="h4">Features include:</h4>
       <ul class="project__list">
       <li>Customizable "Favorites" collection that persists to localStorage</li>
       <li>Search bar to search for beers by keywords, including name, ingredients, and food pairings</li>
       <li>Advanced filtering system to refine search results by ABV (alcohol strength), EBC (color), and IBU (hops concentration)</li>
-      </ul>`,
-      ['React', 'Redux', 'Node/npm', 'Webpack', 'HTML', 'CSS', 'SCSS'],
+      </ul>
+      `,
+      ['React', 'Redux', 'HTML', 'CSS', 'SCSS'],
       ['Responsive Design', 'Web Design', 'UI Design'],
       'https://chk-yourself.github.io/punk-beer-app/',
       'an app for exploring, finding, & rating beers'
     ),
     new Project(
       'Flume',
-      `<p>I built a dependency-free, flexible plugin (<a class="link--inline" href="https://github.com/chk-yourself/flume">view on GitHub</a>) for creating responsive, highly-customizable, touch-enabled sliders + carousels with ease.</p>
+      `<p>I built a dependency-free, flexible plugin for creating responsive, highly-customizable, touch-enabled sliders + carousels with ease. <a class="link--inline" href="https://github.com/chk-yourself/flume">View on GitHub</a></p>
       <h4 class="h4">Features:</h4> 
       <ul class="project__list">
       <li>Responsive Design</li>
@@ -112,8 +139,9 @@
       <li>Autoplay</li>
       <li>Dot indicators</li>
       <li>Arrow indicators</li>
-      </ul>`,
-      ['JavaScript', 'HTML', 'CSS', 'SCSS', 'Node', 'Webpack'],
+      </ul>
+      `,
+      ['JavaScript', 'HTML', 'CSS', 'SCSS'],
       ['Responsive Design', 'Web Design', 'UI Design'],
       'https://chk-yourself.github.io/flume/',
       'a dependency-free, modern slider/carousel plugin'
@@ -144,10 +172,12 @@
   });
 
   projects.forEach(project => {
-    const devTags = project.devTags
-      .map(tag => `<span class="project-tag project-tag--dev">${tag}</span>`);
-    const desTags = project.desTags
-      .map((tag, i, arr) => `<span class="project-tag project-tag--des">${tag}</span>`);
+    const devTags = project.devTags.map(
+      tag => `<span class="project-tag project-tag--dev">${tag}</span>`
+    );
+    const desTags = project.desTags.map(
+      (tag, i, arr) => `<span class="project-tag project-tag--des">${tag}</span>`
+    );
     const allTags = [...devTags, ...desTags].join(', ');
     const projectOverview = project.overview;
     const card = project.cardElem;
