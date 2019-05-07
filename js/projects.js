@@ -34,8 +34,7 @@
       <li>subtasks to break down tasks into smaller steps</li>
       <li>activity notifications</li>
       <li>+ more</li>
-      </ul>
-      `,
+      </ul>`,
       ['React', 'Redux', 'Firebase', 'Node', 'HTML', 'CSS', 'SCSS'],
       ['UX/UI Design', 'Web Design', 'Responsive Design'],
       'https://wrkflw.tk',
@@ -57,8 +56,7 @@
       <li>accordion navigation</li>
       <li>breadcrumb navigation</li>
       <li>off-canvas navigation</li>
-      </ul>
-      `,
+      </ul>`,
       ['JavaScript', 'JSON', 'HTML', 'CSS', 'SCSS'],
       ['UX/UI Design', 'Web Design', 'Responsive Design'],
       'https://chk-yourself.github.io/lemonade/',
@@ -139,8 +137,7 @@
       <li>Autoplay</li>
       <li>Dot indicators</li>
       <li>Arrow indicators</li>
-      </ul>
-      `,
+      </ul>`,
       ['JavaScript', 'HTML', 'CSS', 'SCSS'],
       ['Responsive Design', 'Web Design', 'UI Design'],
       'https://chk-yourself.github.io/flume/',
