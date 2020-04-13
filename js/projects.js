@@ -29,7 +29,7 @@
       <li>typeahead search to quickly find tasks by name, project, tags, or keywords</li>
       <li>task sorting, filtering, and prioritizing</li>
       <li>task labeling with color-coded tags</li>
-      <li>user <a class="link--inline" href="https://wrkflw.tk/guide">guide</a> to onboard new users</li>
+      <li>user <a class="link--inline" href="https://wrkflw.cf/guide">guide</a> to onboard new users</li>
       <li>task comments with relative timestamps</li>
       <li>subtasks to break down tasks into smaller steps</li>
       <li>activity notifications</li>
@@ -37,7 +37,7 @@
       </ul>`,
       ['React', 'Redux', 'Firebase', 'Node', 'HTML', 'CSS', 'SCSS'],
       ['UX/UI Design', 'Web Design', 'Responsive Design'],
-      'https://wrkflw.tk',
+      'https://wrkflw.cf',
       'a real-time, project management app, inspired by Asana and Trello'
     ),
     new Project(
